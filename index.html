@@ -1,109 +1,162 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:og="http://ogp.me/ns#"
-      xmlns:fb="https://www.facebook.com/2008/fbml">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hugo Arriojas Portfolio</title>
-    <meta name="description" content="Dunder Mifflin, Inc.">
-    <script src="https://kit.fontawesome.com/06c705b05c.js" crossorigin="anonymous"></script>
-    <style>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
 
-        html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
-        
-        html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
-        
-        *, *:before, *:after {box-sizing: inherit}
-        
-        .srOnly { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hugo Arriojas Portfolio</title>
+  <link rel="shortcut icon" href="assets/initialsSquare.png" type="image/x-icon">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/06c705b05c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/style.css">
 
-      * { box-sizing: border-box; }
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display&display=swap"
+    rel="stylesheet">
 
-      html, body {
-        background-color: #fdfdef;
-        color: rgb(32, 32, 32);
-        font-family: 'Helvetica', sans-serif;
-        font-size: 24px;
-        height: 100%;
-        margin: 0;
-        width: 100%;
-      }
+</head>
 
-      .wrapper {
-        padding: 3%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-      }
+<body id="app">
+  <div class="wrapper">
+    <!-- Mobile Menu -->
+    <div class="mobile">
+      <div class="mobileNav">
+        <div class="logo">
+          <img src="./assets/initials.png" alt="HA - Website creator's initials">
+        </div>
+      </div>
+      <div class="mobilemMenu">
+        <ul class="mobileList">
+          <li class="current"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /Mobile menu -->
 
-      #app {
-        text-align: center;
-      }
+    <!-- Side Nav -->
+    <div class="sideNav">
+      <p class="sideIntro">
+        I am a <span>web developer</span> currently living in Ottawa, Canada
+      </p>
+      <ul class="anchor_nav vert_menu_list">
+        <li class="current"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /Side Nav -->
 
-      h1,h2 {
-          margin: 1%;
-      }
-      h1 {
-        font-size: 1.75em;
-      }
-      h2 {
-          font-size: 1.50em;
-      }
+    <!-- Splash page -->
+    <section class="splash">
+      <div class="splashWrapper">
+        <div class="nameTitle">
+          <div class="name">
+            <h1 class="first">Hugo</h1>
+            <h1 class="last">Arriojas</h1>
+          </div>
+          <p class="subtitle">Web Developer</p>
+        </div>
+      </div>
+    </section>
+    <!-- /Splash -->
 
-      img {
-        margin: 0 auto;
-      }
+    <!-- About -->
+    <section class="about">
+      <div class="aboutWrapper">
+        <div class="sub">
+          <div class="verticalLine"></div>
+          <p class="subheading">who i am</p>
+        </div>
+        <h2 class="sectionTitle">Hello</h2>
+        <div class="aboutText">
+          <div class="greySquare"></div>
+          <p class="intro">
+            My name is Hugo Arriojas and I am a front-end web developer with a passion for problem solving and hope to
+            work with you to bring our design to life
+          </p>
+          <div class="pinkLine"></div>
+          <p class="history">
+            I graduated from <a href="https://www.dal.ca/">Dalhousie University</a> with a degree in marine biology &
+            statistics and recently graduated from <a href="http://www.junocollege.com">Juno College</a>'s Immersive Web
+            Development Bootcamp when I learned a variety of front-end and database manipulation methods.
+            Due to my background in marine data science, I excel in client-facing and challenging data-driven positions. I
+            have a strong understanding of web and analytical software and will use these skills to write stable, legible,
+            and responsive code that turns our ideas into reality.
+          </p>
+        </div>
+        </div>
+    </section>
+    <!-- /About -->
 
-      h2 span:nth-of-type(even){
-        color:green;
-      }
+    <!-- Skills -->
 
-      h2 span:nth-of-type(odd){
-        color:red;
-      }
-      .links {
-        display: flex;
-        justify-content: space-evenly;
-        width: 85%;
-        margin-bottom: 1%;
-        font-size: 42px;
-      }
-      p {
-        font-size: 18px;
-        margin:3% 1% 1% 1%;
-      }
-      .mediumLogo, a {
-        color: black;
-        font-size: 50px;
-        height: 40px;
-        width: 72px;
-      }
-      .mediumLogo:hover, .mediumLogo:focus, a:hover , a:focus {
-        color: crimson;
-        border-bottom: dotted 1px crimson;
-      }
-    </style>
-  </head>
+    <!-- /Skills -->
 
-  <body id="app">
-    <div class="wrapper">
-    <h1>Hugo's Portfolio is Under Construction</h1>
-    <img src="./assets/under-construction.gif" alt="under construction gif"/>
-    <h2>Coming <span>D</span><span>E</span><span>C</span><span>E</span><span>M</span><span>B</span><span>E</span><span>R</span> <span>2</span><span>0</span><span>2</span><span>1</span><span>!</span></h2>
-    <p>For now, you can visit my socials below:</p>
+
+    <!-- Portfolio -->
+    <section class="portfolio">
+      <div class="portfolioWrapper">
+        <div class="project">
+          <h3 class="projectTitle">Reactive Retail</h3>
+            <p class="projectDesc">
+
+            </p>
+              <a href="https://reactiveretail.netlify.app/" class="projectLink">
+                Live Project
+              </a>
+              <a href="" class="projectLink">Github</a></p>
+        </div>
+        <div class="project">
+          <h3 class="projectTitle">Not So Social Event Planner</h3>
+            <p class="projectDesc">
+
+            </p>
+              <a href="" class="projectLink">Live Project</a>
+              <a href="" class="projectLink">Github</a></p>
+          </h3>
+        </div>
+        <div class="project">
+          <h3 class="projectTitle">GIF Me The Weather</h3>
+            <p class="projectDesc">
+
+            </p>
+              <a href="" class="projectLink">Live Project</a>
+              <a href="" class="projectLink">Github</a></p>
+          </h3>
+        </div>
+        <div class="project">
+          <h3 class="projectTitle">Delicious PSD Conversion</h3>
+            <p class="projectDesc">
+
+            </p>
+              <a href="" class="projectLink">Live Project</a>
+              <a href="" class="projectLink">Github</a></p>
+        </div>
+
+      </div>
+    </section>
+    <!-- /Portfolio -->
+
+
+    <!-- Links -->
     <div class="links">
       <p class="srOnly">The links are as follows: LinkedIn, then twitter, then medium</p>
       <a href="https://www.linkedin.com/in/hugo-arriojas-53613120a"><i class="fab fa-linkedin"></i></a>
       <a href="https://twitter.com/hugo_arriojas"><i class="fab fa-twitter"></i></a>
-      <a href="https://medium.com/@hugo.arriojas"><img src="./assets/MediumLogo.png" alt="Logo for medium site" class="mediumLogo"></a>
+      <a href="https://medium.com/@hugo.arriojas"><img src="./assets/MediumLogo.png" alt="Logo for medium site"
+          class="mediumLogo"></a>
     </div>
-    </div>
-  </body>
+    <!-- /Links -->
+
+  </div>
+</body>
 <script>
   console.log("Still under construction! Good try looking here though 😉")
 </script>
