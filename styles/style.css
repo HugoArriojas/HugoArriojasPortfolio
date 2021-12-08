@@ -265,11 +265,12 @@ html {
 }
 
 .splash {
-  background-color: #443a8b;
+  height: 95vh;
+  background-image: linear-gradient(170deg, #443a8b 70%, #f7f7f7 calc(70% + 2px));
 }
 
 h1 {
-  color: white;
+  color: #f7f7f7;
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
@@ -292,14 +293,24 @@ h1 {
 }
 
 .about {
+  background-image: linear-gradient(190deg, #f7f7f7 70%, white calc(70% + 2px));
+}
+
+.Page_Bg {
   background-color: #f7f7f7;
+  position: absolute;
+  left: -4px;
+  top: 1054px;
+  width: 1924px;
+  height: 1799px;
+  z-index: 364;
 }
 
 .verticalLine {
   border-width: 1px;
   border-color: #424242;
   border-style: solid;
-  background-color: #ef5350;
+  background-color: #fe6192;
   width: 0;
   height: 74px;
 }
