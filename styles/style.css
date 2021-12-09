@@ -4,6 +4,7 @@ html {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 html {
@@ -305,12 +306,12 @@ h1 {
 }
 
 .first {
-  font-size: 40px;
+  font-size: 60px;
   line-height: 0.75;
 }
 
 .last {
-  font-size: 42px;
+  font-size: 70px;
 }
 
 .subtitle {
@@ -366,6 +367,12 @@ h1 {
   left: 5%;
   top: -5%;
   z-index: 0;
+}
+
+.aboutRight {
+  position: absolute;
+  right: 5%;
+  top: -15%;
 }
 
 .heading {
@@ -472,15 +479,29 @@ h1 {
 }
 
 .skills {
-  background-image: linear-gradient(-3deg, #443a8b 80%, #FFF calc(80% + 2px));
+  background-image: linear-gradient(-5deg, #443a8b 80%, #FFF calc(80% + 2px));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
 }
 
 .skillsWrapper {
-  padding: 8% 0 1% 0;
-  width: 80%;
+  width: 90%;
   text-align: center;
   margin: 0 auto;
   color: #f7f7f7;
+  padding-top: 5%;
+  position: relative;
+}
+.skillsWrapper img {
+  position: absolute;
 }
 
 h2 {
@@ -489,21 +510,51 @@ h2 {
 
 .currentSkills {
   font-size: 50px;
-  margin: 10px;
+  z-index: 2;
+}
+.currentSkills i {
+  margin: 1%;
 }
 
 .learning {
   margin: 0;
 }
 
+.skillDots {
+  left: -10%;
+  bottom: -50%;
+  height: 90%;
+  z-index: 1;
+}
+
+.skillTri {
+  right: 0;
+  top: 0;
+  z-index: 0;
+  width: 15%;
+}
+
+.skillCircle {
+  right: 5%;
+  top: 0;
+  z-index: 1;
+}
+
 .portfolio {
-  background-image: linear-gradient(3deg, #FFF 95%, #443a8b calc(95% + 2px));
+  background-image: linear-gradient(4deg, #FFF 95%, #443a8b calc(95% + 2px));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
 }
 
 .portfolioWrapper {
   width: 90%;
   margin: 0 auto;
-  padding: 10% 0 5% 0;
+  padding-top: 12%;
   text-align: center;
 }
 
@@ -512,10 +563,12 @@ h2 {
   margin: 0;
   font-size: 40px;
   color: #232227;
+  position: relative;
+  z-index: 3;
 }
 
 .project {
-  margin: 10% 0;
+  margin: 8% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,19 +577,65 @@ h2 {
           align-items: center;
 }
 
+.project:last-of-type {
+  margin-bottom: 0;
+}
+
 .projectImage {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+.graySquareLeft,
+.graySquareRight {
+  width: 400px;
+  height: 300px;
+  background-color: #ececec;
+  position: absolute;
+  z-index: 1;
+}
+
+.graySquareLeft {
+  right: -15%;
+  bottom: -15%;
+}
+
+.graySquareRight {
+  bottom: 0;
+  left: -20%;
+}
+
+.projectDotsLeft,
+.projectDotsRight {
+  position: absolute;
+  z-index: 0;
+  width: 70%;
+}
+
+.projectDotsRight {
+  right: -10%;
+  top: 10%;
 }
 
 .projectText {
   width: 95%;
   margin: 0 3%;
+  position: relative;
+  z-index: 3;
+}
+
+.projectDotsLeft {
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .projectScreen {
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 5;
 }
 
 .projectTitle {
@@ -564,4 +663,64 @@ h2 {
   text-transform: uppercase;
   text-decoration: underline;
   margin: 0 5%;
+}
+
+.contact {
+  text-align: center;
+  background-image: linear-gradient(-3deg, #f7f7f7 80%, #FFF calc(80% + 2px));
+  overflow: hidden;
+}
+.contact span {
+  color: #fe6192;
+}
+.contact a {
+  color: #232227;
+  font-size: 30px;
+}
+.contact a:focus,
+.contact a:hover {
+  color: #fe6192;
+}
+
+.contactWrapper {
+  padding: 10% 5% 5% 5%;
+  position: relative;
+}
+.contactWrapper img {
+  position: absolute;
+  z-index: 0;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding-top: 2%;
+}
+.socials li {
+  margin: 0 2%;
+}
+
+.contactLeftCir {
+  left: 0%;
+}
+
+.contactSquig {
+  left: 0;
+  top: 0;
+}
+
+.contactRightCir {
+  right: 0%;
+  top: 20%;
+}
+
+.contactTri {
+  right: 0%;
+  bottom: 0;
+  width: 10%;
 }

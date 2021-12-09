@@ -1,14 +1,22 @@
 .skills {
-    background-image: linear-gradient(-3deg, $purple 80%, #FFF calc(80% + 2px));
+    background-image: linear-gradient(-5deg, $purple 80%, #FFF calc(80% + 2px));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
 }
 
 
 .skillsWrapper {
-    padding: 8% 0 1% 0;
-    width: 80%;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
     color: $gray;
+    padding-top: 5%;
+    position: relative;
+    img {
+        position: absolute;
+    }
 }
 
 h2 {
@@ -17,9 +25,32 @@ h2 {
 
 .currentSkills {
     font-size: 50px;
-    margin: 10px;
+    z-index: 2;
+    i {
+        margin: 1%;
+    }
 }
 
 .learning {
     margin: 0;
+}
+
+.skillDots {
+    left: -10%;
+    bottom: -50%;
+    height: 90%;
+    z-index: 1;
+}
+
+.skillTri {
+    right: 0;
+    top: 0;
+    z-index: 0;
+    width: 15%;
+}
+
+.skillCircle {
+    right: 5%;
+    top: 0;
+    z-index: 1;
 }

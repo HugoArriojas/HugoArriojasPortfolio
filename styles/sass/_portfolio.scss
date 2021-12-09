@@ -1,5 +1,8 @@
 .portfolio {
-	background-image: linear-gradient(3deg, #FFF 95%, $purple calc(95% + 2px));
+	background-image: linear-gradient(4deg, #FFF 95%, $purple calc(95% + 2px));
+	display: flex;
+	align-items: center;
+	overflow: hidden;
 
 }
 
@@ -7,7 +10,7 @@
 .portfolioWrapper {
 	width: 90%;
 	margin: 0 auto;
-	padding: 10% 0 5% 0;
+	padding-top: 12%;
 	text-align: center;
 }
 
@@ -16,32 +19,81 @@
 	margin: 0;
 	font-size: 40px;
 	color: $offBlack;
+	position: relative;
+	z-index: 3;
 }
 
 .project {
-	margin: 10% 0;
+	margin: 8% 0;
 	display: flex;
 	align-items: center;
+}
+
+.project:last-of-type {
+	margin-bottom: 0;
 }
 
 .projectImage {
 	width: 100%;
 	height: 100%;
+	position: relative;
 }
+
+.graySquareLeft,
+.graySquareRight {
+	width: 400px;
+	height: 300px;
+	background-color: $graySquare;
+	position: absolute;
+	z-index: 1;
+}
+
+.graySquareLeft {
+	right: -15%;
+	bottom: -15%;
+}
+
+.graySquareRight {
+	bottom: 0;
+	left: -20%;	
+}
+
+.projectDotsLeft, 
+.projectDotsRight {
+	position: absolute;
+	z-index: 0;
+	width: 70%;
+}
+
+.projectDotsRight {
+	right: -10%;
+	top: 10%;
+}
+
 
 .projectText {
 	width: 95%;
 	margin: 0 3%;
+	position: relative;
+	z-index: 3;
+}
+
+.projectDotsLeft {
+	left: 0;
+	bottom: 0;
+	z-index: -1;
 }
 
 .projectScreen {
 	width: 100%;
 	height: 100%;
+	position: relative;
+	z-index: 5;
 }
 
 .projectTitle {
 	font-size: 30px;
-	color: rgb(35, 34, 39);        
+	color: rgb(35, 34, 39);
 }
     
 .right {

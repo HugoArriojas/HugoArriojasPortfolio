@@ -1,0 +1,55 @@
+.contact {
+    text-align: center;
+    background-image: linear-gradient(-3deg, $gray 80%, #FFF calc(80% + 2px));
+    overflow: hidden;
+    span {
+        color: $pink;
+    }
+    a {
+        color: $offBlack;
+        font-size: 30px;
+    }
+    a:focus,
+    a:hover  {
+        color: $pink;
+    }
+}
+
+.contactWrapper {
+    padding: 10% 5% 5% 5%;
+    position: relative;
+    img {
+        position: absolute;
+        z-index: 0;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 2%;
+    li {
+        margin: 0 2%
+    }
+}
+
+.contactLeftCir {
+    left: 0%;
+}
+
+.contactSquig {
+    left: 0;
+    top: 0;
+}
+
+.contactRightCir {
+    right: 0%;
+    top: 20%;
+}
+
+.contactTri {
+    right: 0%;
+    bottom: 0;
+    width: 10%;
+}
