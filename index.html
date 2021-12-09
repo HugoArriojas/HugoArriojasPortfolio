@@ -29,55 +29,62 @@
 
 
       <!-- Side Nav -->
-      <!-- <div class="sideNav">
-        <p class="sideIntro">
-          I am a <span>web developer</span> currently living in Ottawa, Canada
-        </p>
-        <ul class="anchor_nav vert_menu_list">
-          <li class="current"><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="socials">
-          <li><a href="https://github.com/HugoArriojas" rel="noreferrer noopener" target="_blank"><i
-                class="fab fa-github"></i></a></li>
-          <li><a href="www.linkedin.com/in/hugoarriojas" rel="noreferrer noopener" target="_blank"><i
-                class="fab fa-linkedin"></i></a></li>
-          <li><a href="mailto:hugo.arriojas@hotmail.com?subject=Hello Hugo" target="_blank" rel="noopener noreferrer"><i
-                class="far fa-envelope"></i></a></li>
-          <li><a href="https://twitter.com/hugo_arriojas" rel="noreferrer noopener" target="_blank"><i
-                class="fab fa-twitter"></i></a></li>
-        </ul>
-      </div> -->
+      <div class="sideNav" id="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <div class="sideNavContent">
+          <p class="sideIntro">
+            I am a <span>web developer</span> currently living in Ottawa, Canada
+          </p>
+          <ul class="anchor_nav vert_menu_list">
+            <li class="current"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="socials">
+            <li><a href="https://github.com/HugoArriojas" rel="noreferrer noopener" target="_blank"><i
+                  class="fab fa-github"></i></a></li>
+            <li><a href="www.linkedin.com/in/hugoarriojas" rel="noreferrer noopener" target="_blank"><i
+                  class="fab fa-linkedin"></i></a></li>
+            <li><a href="mailto:hugo.arriojas@hotmail.com?subject=Hello Hugo" target="_blank"
+                rel="noopener noreferrer"><i class="far fa-envelope"></i></a></li>
+            <li><a href="https://twitter.com/hugo_arriojas" rel="noreferrer noopener" target="_blank"><i
+                  class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
       <!-- /Side Nav -->
     </div>
-
-    <div class="contentWrapper">
+    
+    <div class="contentWrapper" id="mainContent">
+      <!-- SideNav open -->
+      <div class="sideNavButton">
+        <p class="openSideNav" onclick="openNav()">➞</p>
+      </div>
       <!-- Splash page -->
       <section class="splash" id="home">
+        <!-- Mobile Menu -->
+        <div class="dropdown">
+          <!-- <button class="menuIcon" onclick="myFunction()"> -->
+          <Button class="menuIcon" onclick="myFunction()">
+            Menu
+          </button>
+          <!-- </button> -->
+          <!-- Nav Links (hidden by default) -->
+          <ul class="mobileLinks" id="menuLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <!-- Hamburger menu / bar icon to toggle the nav links -->
+        </div>
+        <!-- /Mobile menu -->
         <div class="splashWrapper">
 
-          <!-- Mobile Menu -->
-          <div class="dropdown">
-            <!-- <button class="menuIcon" onclick="myFunction()"> -->
-            <Button class="menuIcon" onclick="myFunction()">
-              Menu
-            </button>
-            <!-- </button> -->
-            <!-- Nav Links (hidden by default) -->
-            <ul class="mobileLinks" id="menuLinks">
-              <li><a href="#home" class="active">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-            <!-- Hamburger menu / bar icon to toggle the nav links -->
-          </div>
 
-          <!-- /Mobile menu -->
           <div class="nameTitle">
             <div class="name">
               <h1 class="first">Hugo</h1>
@@ -124,6 +131,9 @@
                   I have a strong understanding of web and analytical software and will use these skills to write
                   stable, legible, and responsive code that turns our ideas into reality.
                 </p>
+                <a href="./assets/about/Hugo-Arriojas-Resume.pdf" download>
+                  <h3 class="resume">Resume</h3>
+                </a>
               </div>
             </div>
           </div>
