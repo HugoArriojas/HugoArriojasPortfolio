@@ -7,6 +7,11 @@ ul {
   padding: 0;
 }
 
+.bodyWrapper,
+.contentWrapper {
+  position: relative;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -361,13 +366,17 @@ h1 {
   /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.sideNavButton {
+.openSideNav {
   margin: 0;
+  font-size: 20px;
   padding: 1%;
   color: #443a8b;
   background-color: #fe6192;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  z-index: 10;
+  cursor: pointer;
 }
 
 /* The navigation menu links */

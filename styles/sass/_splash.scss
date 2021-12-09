@@ -79,15 +79,18 @@ h1 {
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
 
-  .sideNavButton {
+  .openSideNav {
       margin: 0;
-    //   width: 100%;
+      font-size: 20px;
       padding: 1%;
       color: $purple;
       background-color: $pink;
-      position: sticky;
+      position: fixed;
       top: 0;
-    //   left: 0;
+      left: 0;
+      z-index: 10;
+      cursor: pointer;
+
 
   }
   
