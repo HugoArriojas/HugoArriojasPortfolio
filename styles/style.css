@@ -6,12 +6,6 @@ ul {
   list-style-type: none;
 }
 
-.bodyWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -274,6 +268,10 @@ html {
   overflow: hidden;
 }
 
+.mobile {
+  display: none;
+}
+
 .splash {
   height: 95vh;
   background-image: linear-gradient(170deg, #443a8b 70%, #f7f7f7 calc(70% + 2px));
@@ -307,24 +305,24 @@ h1 {
 }
 
 .first {
-  font-size: 70px;
+  font-size: 40px;
   line-height: 0.75;
 }
 
 .last {
-  font-size: 100px;
+  font-size: 42px;
 }
 
 .subtitle {
-  font-size: 50px;
+  font-size: 30px;
   color: #fe6192;
   margin: 0;
 }
 
 .splash img {
   position: absolute;
-  height: 150px;
-  width: 150px;
+  height: 3em;
+  width: 3em;
   z-index: 0;
 }
 
@@ -338,13 +336,13 @@ h1 {
 }
 
 .splashTripSquig {
-  right: 10%;
-  top: 1%;
+  right: 20%;
+  top: 15%;
 }
 
 .about {
-  background-image: linear-gradient(190deg, #f7f7f7 70%, white calc(70% + 2px));
-  height: 75vh;
+  background-image: linear-gradient(185deg, #f7f7f7 70%, white calc(70% + 2px));
+  height: 100%;
 }
 
 .aboutWrapper {
@@ -362,8 +360,8 @@ h1 {
 }
 
 .aboutLeft {
-  height: 200px;
-  width: 250px;
+  height: 125px;
+  width: 150px;
   position: absolute;
   left: 5%;
   top: -5%;
@@ -382,7 +380,7 @@ h1 {
 }
 
 .subheading {
-  font-size: 25px;
+  font-size: 18px;
   font-family: "PlayfairDisplay";
   color: #424242;
   margin: 0;
@@ -390,7 +388,7 @@ h1 {
 
 .sectionTitle {
   margin: 0;
-  font-size: 100px;
+  font-size: 40px;
   color: #232227;
   font-weight: bold;
   text-transform: uppercase;
@@ -400,22 +398,25 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .aboutImage {
-  max-width: 50%;
+  max-width: 35%;
   position: relative;
 }
 
 .headshot {
   width: 100%;
   height: 100;
-  z-index: 1;
+  z-index: 3;
   border-radius: 0 0 50px 0;
 }
 
 .graySquare {
-  height: 80%;
+  height: 100%;
   width: 100%;
   max-height: 600px;
   background-color: #ececec;
@@ -425,13 +426,22 @@ h1 {
   z-index: -1;
 }
 
+.aboutDots {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  z-index: -2;
+  top: 30%;
+  left: 0;
+}
+
 .aboutText {
   padding: 2% 5%;
   position: relative;
 }
 
 .intro {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   color: #b2b2b8;
   line-height: 1.766;
@@ -450,17 +460,108 @@ h1 {
 
 .history {
   margin-top: 10%;
-  font-size: 20px;
-  color: #b2b1b8;
+  font-size: 16px;
+  color: #b2b2b8;
   line-height: 1.75;
 }
 
 .history a {
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
   color: #b2b2b8;
 }
 
-.firebaseIcon {
-  height: 20px;
+.skills {
+  background-image: linear-gradient(-3deg, #443a8b 80%, #FFF calc(80% + 2px));
+}
+
+.skillsWrapper {
+  padding: 8% 0 1% 0;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: #f7f7f7;
+}
+
+h2 {
+  margin-top: 4%;
+}
+
+.currentSkills {
+  font-size: 50px;
+  margin: 10px;
+}
+
+.learning {
+  margin: 0;
+}
+
+.portfolio {
+  background-image: linear-gradient(3deg, #FFF 95%, #443a8b calc(95% + 2px));
+}
+
+.portfolioWrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10% 0 5% 0;
+  text-align: center;
+}
+
+.portfolioTitle {
+  padding: 2% 0;
+  margin: 0;
+  font-size: 40px;
+  color: #232227;
+}
+
+.project {
+  margin: 10% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+}
+
+.projectText {
+  width: 95%;
+  margin: 0 3%;
+}
+
+.projectScreen {
+  width: 100%;
+  height: 100%;
+}
+
+.projectTitle {
+  font-size: 30px;
+  color: #232227;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.projectDesc {
+  font-size: 18px;
+  color: #b2b1b8;
+}
+
+.projectLink {
+  font-size: 20px;
+  color: #fe6192;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 0 5%;
 }
