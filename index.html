@@ -26,33 +26,17 @@
 <body id="app">
   <div class="bodyWrapper">
     <div class="menuWrapper">
-      <!-- Mobile Menu -->
-      <div class="mobile">
-        <div class="mobileNav">
-          <div class="logo">
-            <img src="./assets/initials.png" alt="HA - Website creator's initials">
-          </div>
-        </div>
-        <div class="mobilemMenu">
-          <ul class="mobileList">
-            <li class="current"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- /Mobile menu -->
 
       <!-- Side Nav -->
-      <div class="sideNav">
+      <!-- <div class="sideNav">
         <p class="sideIntro">
           I am a <span>web developer</span> currently living in Ottawa, Canada
         </p>
         <ul class="anchor_nav vert_menu_list">
           <li class="current"><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -66,14 +50,34 @@
           <li><a href="https://twitter.com/hugo_arriojas" rel="noreferrer noopener" target="_blank"><i
                 class="fab fa-twitter"></i></a></li>
         </ul>
-      </div>
+      </div> -->
       <!-- /Side Nav -->
     </div>
 
     <div class="contentWrapper">
       <!-- Splash page -->
-      <section class="splash">
+      <section class="splash" id="home">
         <div class="splashWrapper">
+
+          <!-- Mobile Menu -->
+          <div class="dropdown">
+            <!-- <button class="menuIcon" onclick="myFunction()"> -->
+            <Button class="menuIcon" onclick="myFunction()">
+              Menu
+            </button>
+            <!-- </button> -->
+            <!-- Nav Links (hidden by default) -->
+            <ul class="mobileLinks" id="menuLinks">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Hamburger menu / bar icon to toggle the nav links -->
+          </div>
+
+          <!-- /Mobile menu -->
           <div class="nameTitle">
             <div class="name">
               <h1 class="first">Hugo</h1>
@@ -89,7 +93,7 @@
       <!-- /Splash -->
 
       <!-- About -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="aboutWrapper">
           <img src="./assets/about/aboutLeft.png" alt="" class="aboutLeft">
           <img src="./assets/about/circleRight.png" alt="" class="aboutRight">
@@ -128,7 +132,7 @@
       <!-- /About -->
 
       <!-- Skills -->
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="skillsWrapper">
           <h2 class="skillsTitle">Current Skills:</h2>
           <p class="currentSkills">
@@ -161,7 +165,7 @@
 
 
       <!-- Portfolio -->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="portfolioWrapper">
           <h2 class="portfolioTitle">Portfolio</h2>
           <div class="project">
@@ -181,7 +185,7 @@
               <img src="./assets/portfolio/projectDots.png" alt="" class="projectDotsRight">
             </div>
           </div>
-          
+
           <div class="project">
             <div class="projectImage">
               <div class="graySquareLeft"></div>
@@ -197,12 +201,12 @@
               <a href="https://gifmetheweather.netlify.app/" class="projectLink">Live Project</a>
               <a href="https://github.com/hugElla/gifMeTheWeather" class="projectLink">Github</a></p>
             </div>
-          </h3>
+            </h3>
           </div>
 
           <div class="project">
             <div class="projectText right">
-              <img src="./assets/portfolio/projectDots.png" alt="" class="projectDotsLeft">
+              <!-- <img src="./assets/portfolio/projectDots.png" alt="" class="projectDotsLeft"> -->
               <h3 class="projectTitle">Not So Social Event Planner</h3>
               <p class="projectDesc">
                 This React group project works as a social planner wherein users are able to submit recurring weekly
@@ -242,12 +246,12 @@
 
 
       <!-- Contact -->
-      <div class="contact">
+      <div class="contact" id="contact">
         <div class="contactWrapper">
           <!-- 🚨🚨🚨🚨 Insert  picture of me here-->
           <p>Thank you very much for visiting my site!</p>
           <p>I am currently <span>open</span> for work</p>
-           <p>Connect with me using my socials below & let's create something meaningful together!</p>
+          <p>Connect with me using my socials below & let's create something meaningful together!</p>
           <div class="links">
             <ul class="socials">
               <li><a href="https://github.com/HugoArriojas" rel="noreferrer noopener" target="_blank"><i
@@ -260,10 +264,10 @@
                     class="fab fa-twitter"></i></a></li>
             </ul>
           </div>
-          <img src="./assets/contact/leftCircle.png"  alt="" class="contactLeftCir">
-          <img src="./assets/contact/projectSquiggles.png"  alt="" class="contactSquig">
-          <img src="./assets/contact/rightCircle.png"  alt="" class="contactRightCir">
-          <img src="./assets/contact/rightTriangle.png"  alt="" class="contactTri">
+          <img src="./assets/contact/leftCircle.png" alt="" class="contactLeftCir">
+          <img src="./assets/contact/projectSquiggles.png" alt="" class="contactSquig">
+          <img src="./assets/contact/rightCircle.png" alt="" class="contactRightCir">
+          <img src="./assets/contact/rightTriangle.png" alt="" class="contactTri">
         </div>
       </div>
       <!-- /Contact -->
@@ -273,9 +277,7 @@
   </div>
   <!-- /BodyWrapper -->
 </body>
-<script>
-  console.log("Still under construction! Good try looking here though 😉")
-</script>
+
 <script src="./script.js"></script>
 
 </html>

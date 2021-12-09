@@ -269,13 +269,9 @@ html {
   overflow: hidden;
 }
 
-.mobile {
-  display: none;
-}
-
 .splash {
   height: 95vh;
-  background-image: linear-gradient(170deg, #443a8b 70%, #f7f7f7 calc(70% + 2px));
+  background-image: linear-gradient(170deg, #443a8b 70%, #e2dfdf calc(70% + 2px));
 }
 
 .splashWrapper {
@@ -298,7 +294,7 @@ html {
 }
 
 h1 {
-  color: #f7f7f7;
+  color: #e2dfdf;
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
@@ -341,8 +337,59 @@ h1 {
   top: 15%;
 }
 
+/* Dropdown Button */
+.menuIcon {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* Dropdown button on hover & focus */
+.menuIcon:hover, .menuIcon:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.mobileLinks {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.mobileLinks a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.mobileLinks a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .mobileLinks container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
 .about {
-  background-image: linear-gradient(185deg, #f7f7f7 70%, white calc(70% + 2px));
+  background-image: linear-gradient(185deg, #e2dfdf 70%, white calc(70% + 2px));
   height: 100%;
 }
 
@@ -450,7 +497,7 @@ h1 {
 .intro {
   font-size: 20px;
   font-weight: 600;
-  color: #b2b2b8;
+  color: #74747b;
   line-height: 1.766;
 }
 
@@ -468,14 +515,14 @@ h1 {
 .history {
   margin-top: 10%;
   font-size: 16px;
-  color: #b2b2b8;
+  color: #74747b;
   line-height: 1.75;
 }
 
 .history a {
   font-weight: 700;
   text-decoration: none;
-  color: #b2b2b8;
+  color: #74747b;
 }
 
 .skills {
@@ -496,7 +543,7 @@ h1 {
   width: 90%;
   text-align: center;
   margin: 0 auto;
-  color: #f7f7f7;
+  color: #e2dfdf;
   padding-top: 5%;
   position: relative;
 }
@@ -667,7 +714,7 @@ h2 {
 
 .contact {
   text-align: center;
-  background-image: linear-gradient(-3deg, #f7f7f7 80%, #FFF calc(80% + 2px));
+  background-image: linear-gradient(-3deg, #e2dfdf 80%, #FFF calc(80% + 2px));
   overflow: hidden;
 }
 .contact span {
@@ -723,4 +770,10 @@ h2 {
   right: 0%;
   bottom: 0;
   width: 10%;
+}
+
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+  }
 }
