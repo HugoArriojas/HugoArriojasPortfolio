@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./styles/style.css">
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/06c705b05c.js" crossorigin="anonymous"></script>
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,193 +21,253 @@
 
 </head>
 
+
+
 <body id="app">
-  <div class="wrapper">
-    <!-- Mobile Menu -->
-    <div class="mobile">
-      <div class="mobileNav">
-        <div class="logo">
-          <img src="./assets/initials.png" alt="HA - Website creator's initials">
+  <div class="bodyWrapper">
+    <div class="menuWrapper">
+      <!-- Mobile Menu -->
+      <div class="mobile">
+        <div class="mobileNav">
+          <div class="logo">
+            <img src="./assets/initials.png" alt="HA - Website creator's initials">
+          </div>
+        </div>
+        <div class="mobilemMenu">
+          <ul class="mobileList">
+            <li class="current"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-      <div class="mobilemMenu">
-        <ul class="mobileList">
+
+      <!-- 🚨🚨🚨🚨 remove this bit -->
+      <!-- <div class="logo_hamb">
+      <div class="in">
+       <div class="menu_logo">
+        <a href="index.html"><img src="img/logo-light.png" alt="" /></a>
+       </div>
+       <div class="hamburger hamburger--collapse-r">
+        <div class="hamburger-box">
+             <div class="hamburger-inner"></div>
+        </div>
+       </div>
+     </div>
+     </div> -->
+
+      <!-- /Mobile menu -->
+
+      <!-- Side Nav -->
+      <div class="sideNav">
+        <p class="sideIntro">
+          I am a <span>web developer</span> currently living in Ottawa, Canada
+        </p>
+        <ul class="anchor_nav vert_menu_list">
           <li class="current"><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <ul class="socials">
+          <li><a href="https://github.com/HugoArriojas" rel="noreferrer noopener" target="_blank"><i
+                class="fab fa-github"></i></a></li>
+          <li><a href="www.linkedin.com/in/hugoarriojas" rel="noreferrer noopener" target="_blank"><i
+                class="fab fa-linkedin"></i></a></li>
+          <li><a href="mailto:hugo.arriojas@hotmail.com?subject=Hello Hugo" target="_blank" rel="noopener noreferrer"><i
+                class="far fa-envelope"></i></a></li>
+          <li><a href="https://twitter.com/hugo_arriojas" rel="noreferrer noopener" target="_blank"><i
+                class="fab fa-twitter"></i></a></li>
+        </ul>
       </div>
+      <!-- /Side Nav -->
     </div>
-    <!-- /Mobile menu -->
 
-    <!-- Side Nav -->
-    <div class="sideNav">
-      <p class="sideIntro">
-        I am a <span>web developer</span> currently living in Ottawa, Canada
-      </p>
-      <ul class="anchor_nav vert_menu_list">
-        <li class="current"><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <ul class="socials">
-        <li><a href="https://github.com/HugoArriojas" rel="noreferrer noopener" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li><a href="www.linkedin.com/in/hugoarriojas" rel="noreferrer noopener" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="mailto:hugo.arriojas@hotmail.com?subject=Hello Hugo" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a></li>
-        <li><a href="https://twitter.com/hugo_arriojas" rel="noreferrer noopener" target="_blank" ><i class="fab fa-twitter"></i></a></li>
-      </ul>
+    <div class="contentWrapper">
+      <!-- Splash page -->
+      <section class="splash">
+        <div class="splashWrapper">
+          <div class="nameTitle">
+            <div class="name">
+              <h1 class="first">Hugo</h1>
+              <h1 class="last">Arriojas</h1>
+            </div>
+            <p class="subtitle">Web Developer</p>
+          </div>
+          <img src="./assets/splash/arrow.png" alt="" class="splashArrow">
+          <img src="./assets/splash/squiggle.png" alt="" class="splashSquig">
+          <img src="./assets/splash/tripleSquiggle.png" alt="" class="splashTripSquig">
+        </div>
+      </section>
+      <!-- /Splash -->
+
+      <!-- About -->
+      <section class="about">
+        <div class="aboutWrapper">
+          <img src="./assets/about/aboutLeft.png" alt="" class="aboutLeft">
+          <div class="aboutMain">
+            <div class="heading">
+              <p class="subheading"><span class="verticalLine">|</span> who i am</p>
+              <h2 class="sectionTitle">Hello</h2>
+            </div>
+            <div class="aboutContent">
+              <div class="aboutImage">
+                <img src="./assets/about/hugoHeadshot.png" alt="" class="headshot">
+                <div class="graySquare"></div>
+                <div class="dots">
+
+                  <img src="./assets/about/dottedCircle.png" alt="" class="aboutDots">
+                </div>
+              </div>
+              <div class="aboutText">
+                <p class="intro">
+                  My name is Hugo Arriojas and I am a front-end web developer with a passion for problem solving and
+                  hope to work with you to bring our design to life
+                </p>
+                <div class="pinkLine"></div>
+                <p class="history">
+                  I graduated from <a href="https://www.dal.ca/">Dalhousie University</a> with a degree in marine
+                  biology
+                  &
+                  statistics and recently graduated from <a href="http://www.junocollege.com">Juno College</a>'s
+                  Immersive
+                  Web
+                  Development Bootcamp when I learned a variety of front-end and database manipulation methods.
+                  Due to my background in marine data science, I excel in client-facing and challenging data-driven
+                  positions.
+                  I
+                  have a strong understanding of web and analytical software and will use these skills to write stable,
+                  legible,
+                  and responsive code that turns our ideas into reality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About -->
+
+      <!-- Skills -->
+      <section class="skills">
+        <div class="skillsWrapper">
+          <h2 class="skillsTitle">Current Skills</h2>
+          <p class="currentSkills">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <!-- 🚨🚨🚨 jQuery logo????  -->
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-git-square"></i>
+            <i class="fas fa-code-branch"></i>
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-react"></i>
+            <i class="devicon-firebase-plain"></i>
+            <i class="fab fa-figma"></i>
+          </p>
+          <h2 class="learningTitle">Learning Next:</h2>
+          <p class="learning">
+            Liquid, Ruby on Rails
+          </p>
+        </div>
+      </section>
+      <!-- /Skills -->
+
+
+      <!-- Portfolio -->
+      <section class="portfolio">
+        <div class="portfolioWrapper">
+          <div class="project">
+            <div class="projectText right">
+              <h3 class="projectTitle">Reactive Retail</h3>
+              <p class="projectDesc">
+                Reactive Retail is a mock retail site built entirely in React using the FakeStore API.
+                In the app, users can filter through a variety of products via category and then convert productprices
+                to different currencies.
+              </p>
+              <a href="https://reactiveretail.netlify.app/" class="projectLink">Live Project</a>
+              <a href="https://github.com/HugoArriojas/ReactiveRetail" class="projectLink">Github</a></p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="projectText left">
+              <h3 class="projectTitle">GIF Me The Weather</h3>
+              <p class="projectDesc">
+                A paired programming project, GIF Me The Weather uses three separate APIs to help plan out the user's
+                week. The user can search any city and receive the weekly forecast along with representative GIFs of the
+                weather as well as an activity suggestion for the day.
+              </p>
+              <a href="https://gifmetheweather.netlify.app/" class="projectLink">Live Project</a>
+              <a href="https://github.com/hugElla/gifMeTheWeather" class="projectLink">Github</a></p>
+            </div>
+            </h3>
+          </div>
+
+          <div class="project">
+            <div class="projectText right">
+              <h3 class="projectTitle">Not So Social Event Planner</h3>
+              <p class="projectDesc">
+                This React group project works as a social planner wherein users are able to submit recurring weekly
+                events into a calendar. Should the user choose to not go through with their social commitments, they are
+                able to check out what shows are streaming at the time. This exercise simulates an agency-style
+                environment, the project scope being outlined in a client brief as would be seen in a typical workplace.
+              </p>
+              <a href="https://notsosocialplanner.netlify.app/" class="projectLink">Live Project</a>
+              <a href="https://github.com/Hugo-Liz-Linda-Ryan/NotSoSocialEventPlanner" class="projectLink">Github</a>
+              </p>
+            </div>
+            </h3>
+          </div>
+
+
+          <!-- 🚨🚨🚨 should I include this? -->
+          <div class="project">
+            <div class="projectText left">
+              <h3 class="projectTitle">Delicious PSD Conversion</h3>
+              <p class="projectDesc">
+                This was a multi-page conversion of a PSD design given to us in our bootcamp. Our task was to make a
+                multi-page functional and responsive site, while maintaining good practices for accessibility.
+              </p>
+              <a href="https://deliciouspsd.netlify.app/" class="projectLink">Live Project</a>
+              <a href="https://github.com/HugoArriojas/deliciousPSDConversion" class="projectLink">Github</a></p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- /Portfolio -->
+
+
+      <!-- Contact -->
+      <div class="contact">
+        <div class="contactWrapper">
+          <!-- 🚨🚨 Insert  picture of me here-->
+          <p>Thank you very much for visiting my site</p>
+          <p>I am currently <span>open</span> to work, let's create something meaningful together!</p>
+          <div class="links">
+            <ul class="socials">
+              <li><a href="https://github.com/HugoArriojas" rel="noreferrer noopener" target="_blank"><i
+                    class="fab fa-github"></i></a></li>
+              <li><a href="www.linkedin.com/in/hugoarriojas" rel="noreferrer noopener" target="_blank"><i
+                    class="fab fa-linkedin"></i></a></li>
+              <li><a href="mailto:hugo.arriojas@hotmail.com?subject=Hello Hugo" target="_blank"
+                  rel="noopener noreferrer"><i class="far fa-envelope"></i></a></li>
+              <li><a href="https://twitter.com/hugo_arriojas" rel="noreferrer noopener" target="_blank"><i
+                    class="fab fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /Contact -->
+
     </div>
-    <!-- /Side Nav -->
-
-    <!-- Splash page -->
-    <section class="splash">
-      <div class="splashWrapper">
-        <div class="nameTitle">
-          <div class="name">
-            <h1 class="first">Hugo</h1>
-            <h1 class="last">Arriojas</h1>
-          </div>
-          <p class="subtitle">Web Developer</p>
-        </div>
-      </div>
-    </section>
-    <!-- /Splash -->
-
-    <!-- About -->
-    <section class="about">
-      <div class="aboutWrapper">
-        <div class="sub">
-          <div class="verticalLine"></div>
-          <p class="subheading">who i am</p>
-        </div>
-        <h2 class="sectionTitle">Hello</h2>
-        <div class="aboutText">
-          <div class="greySquare"></div>
-          <p class="intro">
-            My name is Hugo Arriojas and I am a front-end web developer with a passion for problem solving and hope to
-            work with you to bring our design to life
-          </p>
-          <div class="pinkLine"></div>
-          <p class="history">
-            I graduated from <a href="https://www.dal.ca/">Dalhousie University</a> with a degree in marine biology &
-            statistics and recently graduated from <a href="http://www.junocollege.com">Juno College</a>'s Immersive Web
-            Development Bootcamp when I learned a variety of front-end and database manipulation methods.
-            Due to my background in marine data science, I excel in client-facing and challenging data-driven positions.
-            I
-            have a strong understanding of web and analytical software and will use these skills to write stable,
-            legible,
-            and responsive code that turns our ideas into reality.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- /About -->
-
-    <!-- Skills -->
-    <section class="skills">
-      <div class="skillsWrapper">
-        <p class="currentSkills">
-              Current skills:
-              <i class="fab fa-html5"></i>
-              <i class="fab fa-css3-alt"></i>
-              <i class="fab fa-js-square"></i>
-              <i class="fab fa-git-square"></i>
-              <i class="fas fa-code-branch"></i>
-              <i class="fab fa-sass"></i>
-              <i class="fab fa-react"></i> 
-              <!-- Firebase SVG -->
-              <img src="./assets/skills/firebase.svg" alt="Image icon for Firebase" class="firebaseIcon">
-              <i class="fab fa-figma"></i>
-        </p>
-        <p class="learning">
-          Learning next: Liquid, Ruby on Rails
-        </p>
-      </div>
-    </section>
-
-    <!-- /Skills -->
-
-
-    <!-- Portfolio -->
-    <section class="portfolio">
-      <div class="portfolioWrapper">
-        <div class="project">
-          <div class="projectText right">
-            <h3 class="projectTitle">Reactive Retail</h3>
-            <p class="projectDesc">
-              Reactive Retail is a mock retail site built entirely in React using the FakeStore API.
-              In the app, users can filter through a variety of products via category and then convert productprices to different currencies.
-            </p>
-            <a href="https://reactiveretail.netlify.app/" class="projectLink">Live Project</a>
-            <a href="https://github.com/HugoArriojas/ReactiveRetail" class="projectLink">Github</a></p>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="projectText left">
-            <h3 class="projectTitle">GIF Me The Weather</h3>
-            <p class="projectDesc">
-              A paired programming project, GIF Me The Weather uses three separate APIs to help plan out the user's week. The user can search any city and receive the weekly forecast along with representative GIFs of the weather as well as an activity suggestion for the day.
-            </p>
-            <a href="https://gifmetheweather.netlify.app/" class="projectLink">Live Project</a>
-            <a href="https://github.com/hugElla/gifMeTheWeather" class="projectLink">Github</a></p>
-          </div>
-          </h3>
-        </div>
-
-        <div class="project">
-          <div class="projectText right">
-            <h3 class="projectTitle">Not So Social Event Planner</h3>
-            <p class="projectDesc">
-              This React group project works as a social planner wherein users are able to submit recurring weekly events into a calendar. Should the user choose to not go through with their social commitments, they are able to check out what shows are streaming at the time. This exercise simulates an agency-style environment, the project scope being outlined in a client brief as would be seen in a typical workplace.
-            </p>
-            <a href="https://notsosocialplanner.netlify.app/" class="projectLink">Live Project</a>
-            <a href="https://github.com/Hugo-Liz-Linda-Ryan/NotSoSocialEventPlanner" class="projectLink">Github</a></p>
-          </div>
-          </h3>
-        </div>
-
-
-        <!-- 🚨🚨🚨 should I include this? -->
-        <div class="project">
-          <div class="projectText left">
-            <h3 class="projectTitle">Delicious PSD Conversion</h3>
-            <p class="projectDesc">
-              This was a multi-page conversion of a PSD design given to us in our bootcamp. Our task was to make a multi-page functional and responsive site, while maintaining good practices for accessibility.
-            </p>
-            <a href="https://deliciouspsd.netlify.app/" class="projectLink">Live Project</a>
-            <a href="https://github.com/HugoArriojas/deliciousPSDConversion" class="projectLink">Github</a></p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- /Portfolio -->
-
-
-    <!-- Contact -->
-    <div class="contact">
-      <div class="contactWrapper">
-        <!-- 🚨🚨 Insert  picture of me here-->
-        <p>Thank you very much for visiting my site</p>
-        <p>I am currently <span>open</span>to work, let's create something meaningful together!</p>
-        <div class="links">
-          <ul class="socials">
-            <li><a href="https://github.com/HugoArriojas" rel="noreferrer noopener" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="www.linkedin.com/in/hugoarriojas" rel="noreferrer noopener" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="mailto:hugo.arriojas@hotmail.com?subject=Hello Hugo" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a></li>
-            <li><a href="https://twitter.com/hugo_arriojas" rel="noreferrer noopener" target="_blank" ><i class="fab fa-twitter"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    <!-- /Contact -->
-
+    <!-- /ContentWrapper -->
   </div>
+  <!-- /BodyWrapper -->
 </body>
 <script>
   console.log("Still under construction! Good try looking here though 😉")
 </script>
+<script src="./script.js"></script>
 
 </html>
