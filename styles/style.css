@@ -453,14 +453,15 @@ h1 {
 .menuIcon {
   background-color: #e2dfdf;
   color: #232227;
-  padding: 2%;
+  padding: 4%;
   font-size: 20px;
   border: none;
   cursor: pointer;
   display: none;
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
+  border-radius: 20px;
   z-index: 10;
   border: 1px solid #232227;
 }
@@ -1014,6 +1015,10 @@ h2 {
   }
 }
 @media (max-width: 480px) {
+  .menuIcon {
+    padding: 6%;
+  }
+
   .splash {
     height: 80vh;
   }
