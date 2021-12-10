@@ -135,3 +135,21 @@
 	text-decoration: none;
 	color: $midGray;
 }
+
+.aboutLinks {
+	color: $pink;
+	display: flex;
+}
+
+.aboutLinks a,
+.projectLink {
+	font-size: 20px;
+	color: rgb(254, 97, 146);
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.resume {
+	margin-right: 5%;
+}

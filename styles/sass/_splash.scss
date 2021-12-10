@@ -67,56 +67,95 @@ h1 {
 // SideNav styling
 /* The side navigation menu */
 .sideNav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%; // full viewport size
+    width: 0; // 0 to start
+    position: fixed; 
+    z-index: 11; 
+    top: 0; 
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    color: $purple;
+    // using backgound gradient so border doesn't spill over
+    background-image: linear-gradient(270deg, $purple 1%, $gray calc(1% + 3px));
+    overflow: hidden;
+    padding-top: 5%; /* Place content 60px from the top */
+    transition: 0.4s;
   }
 
+  .closebtn,
   .openSideNav {
       margin: 0;
       font-size: 20px;
       padding: 1%;
       color: $purple;
       background-color: $pink;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 10;
       cursor: pointer;
-
-
+    }
+    
+    .openSideNav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        
   }
-  
+
+  .smallIntro {
+    padding: 3%;
+    span {
+        color: $pink;
+    }
+} 
+        
   /* The navigation menu links */
   .sideNavContent,
   .sideNav a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: $purple;
     display: block;
     transition: 0.3s;
   }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sideNav a:hover {
-    color: #f1f1f1;
+
+  .sideNavLinks a {
+    text-align: center;
+    padding: 3%;
   }
   
+
+/* Class for CSS "fill" effect  */
+.btn-slide {
+    position: relative;
+    z-index: 12;
+}
+
+/* The "fill" that hapens on focus and hover is a pseudoclass that transforms to the right, going from the scaleX of 0 to 1*/
+.btn-slide::before {
+    content: "";
+    border-radius: 0 20px 20px 0;
+    background-color: $pink;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    left: 0;
+    bottom: 0;
+    z-index: -5;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+    transform-origin: left;
+  }
+  
+  .btn-slide:hover::before, 
+  .btn-slide:focus::before {
+    transform: scaleX(1)
+  }
+
+
   /* Position and style the close button (top right corner) */
   .sideNav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    left: 0;
+    font-size: 25px;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -124,52 +163,63 @@ h1 {
     transition: margin-left .5s;
   }
 
+  .navResume {
+      margin: 0;
+  }
 
 
 // Dropdown Menu Styling
  /* Dropdown Button */
  .menuIcon {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+    background-color: $gray;
+    color: $offBlack;
+    padding: 2%;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    border: 1px solid $offBlack;
   }
   
   /* Dropdown button on hover & focus */
-  .menuIcon:hover, .menuIcon:focus {
-    background-color: #2980B9;
+  .menuIcon:hover, 
+  .menuIcon:focus {
+    background-color: $pink;
   }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .mobileLinks {
+
+   /* Dropdown Content (Hidden by Default) */
+   .mobileLinks {
     display: none;
-    position: absolute;
+    margin: 0;
+    position: fixed;
+    top: 0;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 100%;
+    min-height: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 11;
+  }
+
+  .mobileIntro {
+      width: 75%;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 15%;
   }
   
   /* Links inside the dropdown */
   .mobileLinks a {
-    color: black;
-    padding: 12px 16px;
+    color: $offBlack;
+    padding: 3%;
+    text-align: center;
     text-decoration: none;
     display: block;
   }
   
-  /* Change color of dropdown links on hover */
-  .mobileLinks a:hover {background-color: #ddd}
   
   /* Show the dropdown menu (use JS to add this class to the .mobileLinks container when the user clicks on the dropdown button) */
   .show {

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hugo Arriojas Portfolio</title>
+  <title>Hugo Arriojas - Web Developer</title>
   <link rel="shortcut icon" href="assets/initialsSquare.png" type="image/x-icon">
 
   <link rel="stylesheet" href="./styles/style.css">
@@ -30,55 +30,80 @@
 
       <!-- Side Nav -->
       <div class="sideNav" id="sideNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-        <div class="sideNavContent">
-          <p class="sideIntro">
-            I am a <span>web developer</span> currently living in Ottawa, Canada
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">←</a>
+        <nav class="sideNavContent">
+          <p class="smallIntro">
+            Hi, I'm Hugo!
+            I'm a <span>web developer</span> currently living in Ottawa, Canada 🇨🇦
           </p>
-          <ul class="anchor_nav vert_menu_list">
-            <li class="current"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="sideNavLinks">
+            <li class="current btn-slide"><a href="#home">Home</a></li>
+            <li><a href="#about" class="btn-slide">About</a></li>
+            <li><a href="#skills" class="btn-slide">Skills</a></li>
+            <li><a href="#portfolio" class="btn-slide">Portfolio</a></li>
+            <li><a href="#contact" class="btn-slide">Contact</a></li>
+            <li>
+              <a href="./assets/about/Hugo-Arriojas-Resume.pdf" download class="btn-slide">
+                <p class="navResume">Resume</p>
+              </a>
+            </li>
           </ul>
           <ul class="socials">
-            <li><a href="https://github.com/HugoArriojas" rel="noreferrer noopener" target="_blank"><i
-                  class="fab fa-github"></i></a></li>
-            <li><a href="www.linkedin.com/in/hugoarriojas" rel="noreferrer noopener" target="_blank"><i
-                  class="fab fa-linkedin"></i></a></li>
-            <li><a href="mailto:hugo.arriojas@hotmail.com?subject=Hello Hugo" target="_blank"
-                rel="noopener noreferrer"><i class="far fa-envelope"></i></a></li>
-            <li><a href="https://twitter.com/hugo_arriojas" rel="noreferrer noopener" target="_blank"><i
-                  class="fab fa-twitter"></i></a></li>
+            <li>
+              <a href="https://github.com/HugoArriojas" rel="noreferrer noopener" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="www.linkedin.com/in/hugoarriojas" rel="noreferrer noopener" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hugo.arriojas@hotmail.com?subject=Hello Hugo" target="_blank" rel="noopener noreferrer">
+                <i class="far fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/hugo_arriojas" rel="noreferrer noopener" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
           </ul>
-        </div>
+        </nav>
       </div>
       <!-- /Side Nav -->
     </div>
-    
+
     <div class="contentWrapper" id="mainContent">
       <!-- SideNav open -->
-      <div class="sideNavButton">
-        <p class="openSideNav" onclick="openNav()">➞</p>
-      </div>
+      <p class="openSideNav" onclick="openNav()">→</p>
       <!-- Splash page -->
       <section class="splash" id="home">
         <!-- Mobile Menu -->
         <div class="dropdown">
-          <!-- <button class="menuIcon" onclick="myFunction()"> -->
-          <Button class="menuIcon" onclick="myFunction()">
+          <button class="menuIcon" onclick="openDropdown()">
             Menu
           </button>
-          <!-- </button> -->
           <!-- Nav Links (hidden by default) -->
-          <ul class="mobileLinks" id="menuLinks">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <nav class="mobileLinks" id="menuLinks">
+            <p class="smallIntro mobileIntro">
+              Hi, I'm Hugo!
+              I'm a <span>web developer</span> currently living in Ottawa, Canada 🇨🇦
+            </p>
+            <ul class="mobileList">
+              <li><a href="#home" class="active btn-slide">Home</a></li>
+              <li><a href="#about" class="btn-slide">About</a></li>
+              <li><a href="#skills" class="btn-slide">Skills</a></li>
+              <li><a href="#portfolio" class="btn-slide">Portfolio</a></li>
+              <li><a href="#contact" class="btn-slide">Contact</a></li>
+              <li class="btn-slide">
+                <a href="./assets/about/Hugo-Arriojas-Resume.pdf" download>
+                  <p class="navResume">Resume</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
           <!-- Hamburger menu / bar icon to toggle the nav links -->
         </div>
         <!-- /Mobile menu -->
@@ -127,13 +152,16 @@
                     College's</a> Immersive Web Development Bootcamp when I learned a variety of front-end and database
                   manipulation methods.
                   Due to my background in marine data science, I excel in client-facing and challenging data-driven
-                  positions.
-                  I have a strong understanding of web and analytical software and will use these skills to write
-                  stable, legible, and responsive code that turns our ideas into reality.
+                  positions and hope to use these skills to create a more accessible web for everyone.
                 </p>
-                <a href="./assets/about/Hugo-Arriojas-Resume.pdf" download>
-                  <h3 class="resume">Resume</h3>
-                </a>
+                <p class="history">
+                  If you like what you see in my portfolio, send me a message and we can create something beautiful,
+                  together.
+                </p>
+                <div class="aboutLinks">
+                  <a href="./assets/about/Hugo-Arriojas-Resume.pdf" download class="resume">Resume</a>
+                  <a href="#contact">Contact</a>
+                </div>
               </div>
             </div>
           </div>
@@ -187,7 +215,7 @@
                 to different currencies.
               </p>
               <a href="https://reactiveretail.netlify.app/" class="projectLink">Live Project</a>
-              <a href="https://github.com/HugoArriojas/ReactiveRetail" class="projectLink">Github</a></p>
+              <a href="https://github.com/HugoArriojas/ReactiveRetail" class="projectLink git">Github</a></p>
             </div>
             <div class="projectImage">
               <div class="graySquareRight"></div>
@@ -209,7 +237,7 @@
                 weather as well as an activity suggestion for the day.
               </p>
               <a href="https://gifmetheweather.netlify.app/" class="projectLink">Live Project</a>
-              <a href="https://github.com/hugElla/gifMeTheWeather" class="projectLink">Github</a></p>
+              <a href="https://github.com/hugElla/gifMeTheWeather" class="projectLink git">Github</a></p>
             </div>
             </h3>
           </div>
@@ -225,7 +253,7 @@
                 environment, the project scope being outlined in a client brief as would be seen in a typical workplace.
               </p>
               <a href="https://notsosocialplanner.netlify.app/" class="projectLink">Live Project</a>
-              <a href="https://github.com/Hugo-Liz-Linda-Ryan/NotSoSocialEventPlanner" class="projectLink">Github</a>
+              <a href="https://github.com/Hugo-Liz-Linda-Ryan/NotSoSocialEventPlanner" class="projectLink git">Github</a>
               </p>
             </div>
             <div class="projectImage">
@@ -247,7 +275,7 @@
                 multi-page functional and responsive site, while maintaining good practices for accessibility.
               </p>
               <a href="https://deliciouspsd.netlify.app/" class="projectLink">Live Project</a>
-              <a href="https://github.com/HugoArriojas/deliciousPSDConversion" class="projectLink">Github</a></p>
+              <a href="https://github.com/HugoArriojas/deliciousPSDConversion" class="projectLink git">Github</a></p>
             </div>
           </div>
         </div>

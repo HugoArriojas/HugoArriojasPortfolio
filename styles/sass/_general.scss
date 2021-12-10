@@ -3,20 +3,13 @@
 
 html {
     font-family: "Montserrat";
-
+    scroll-behavior: smooth;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
 }
-.bodyWrapper,
-.contentWrapper {
-    position: relative;
-}
 
 
-// .bodyWrapper {
-    // display: flex;
-// }
 
