@@ -341,7 +341,7 @@ h1 {
 /* The side navigation menu */
 .sideNav {
   height: 100%;
-  width: 0;
+  width: 250px;
   position: fixed;
   z-index: 11;
   top: 0;
@@ -376,10 +376,15 @@ h1 {
 }
 
 .smallIntro {
-  padding: 3%;
+  padding: 10% 5%;
+  margin: 0;
 }
 .smallIntro span {
   color: #fe6192;
+}
+
+.sideNavLinks {
+  margin: 1% 0;
 }
 
 /* The navigation menu links */
@@ -396,6 +401,11 @@ h1 {
 .sideNavLinks a {
   text-align: center;
   padding: 3%;
+}
+
+.sideNavContent i:focus,
+.sideNavContent i:hover {
+  color: #fe6192;
 }
 
 /* Class for CSS "fill" effect  */
@@ -867,6 +877,17 @@ h2 {
   text-align: center;
   background-image: linear-gradient(-3deg, #e2dfdf 80%, #FFF calc(80% + 2px));
   overflow: hidden;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 .contact span {
   color: #fe6192;
@@ -879,14 +900,13 @@ h2 {
 .contact a:hover {
   color: #fe6192;
 }
+.contact img {
+  position: absolute;
+  z-index: 0;
+}
 
 .contactWrapper {
   padding: 10% 5% 5% 5%;
-  position: relative;
-}
-.contactWrapper img {
-  position: absolute;
-  z-index: 0;
 }
 
 .socials {
@@ -905,11 +925,12 @@ h2 {
 
 .contactLeftCir {
   left: 0%;
+  bottom: -20%;
 }
 
 .contactSquig {
   left: 0;
-  top: 0;
+  top: 20%;
 }
 
 .contactRightCir {
@@ -1008,9 +1029,7 @@ h2 {
 
   .projectDots,
 .graySquareRight,
-.graySquareLeft,
-.contactSquig,
-.contactRightCir {
+.graySquareLeft {
     display: none;
   }
 }
@@ -1056,5 +1075,10 @@ h2 {
 
   .portfolio {
     background-image: linear-gradient(2deg, #FFF 99%, #443a8b calc(99% + 2px));
+  }
+
+  .contactSquig,
+.contactRightCir {
+    display: none;
   }
 }

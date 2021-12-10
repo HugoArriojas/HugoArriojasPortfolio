@@ -77,12 +77,10 @@
     // portfolio/contact Section flairs
     .projectDots,
     .graySquareRight,
-    .graySquareLeft,
-    .contactSquig,
-    .contactRightCir {
+    .graySquareLeft{
         display: none;
     }
-
+    
 }
 
 @media (max-width: 480px) {
@@ -91,7 +89,7 @@
     .menuIcon {
         padding: 6%;
     }
-
+    
     .splash {
         height: 80vh
     }
@@ -103,11 +101,11 @@
         display: none;
     }
 
-
+    
     .first {
         font-size: 40px;
     }
-
+    
     .last {
         font-size: 50px;
     }
@@ -130,14 +128,18 @@
     .skillsWrapper {
         width: 70%;
     }
-
+    
     // Portfolio section
     .portfolio {
         background-image: linear-gradient(2deg, #FFF 99%, $purple calc(99% + 2px));
     }
 
-
-
+    // Contact section
+    .contactSquig,
+    .contactRightCir {
+        display: none;
+    }
+    
 }
 
 

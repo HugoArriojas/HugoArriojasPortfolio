@@ -2,6 +2,11 @@
     text-align: center;
     background-image: linear-gradient(-3deg, $gray 80%, #FFF calc(80% + 2px));
     overflow: hidden;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     span {
         color: $pink;
     }
@@ -13,15 +18,14 @@
     a:hover  {
         color: $pink;
     }
-}
-
-.contactWrapper {
-    padding: 10% 5% 5% 5%;
-    position: relative;
     img {
         position: absolute;
         z-index: 0;
     }
+}
+
+.contactWrapper {
+    padding: 10% 5% 5% 5%;
 }
 
 .socials {
@@ -36,11 +40,12 @@
 
 .contactLeftCir {
     left: 0%;
+    bottom: -20%;
 }
 
 .contactSquig {
     left: 0;
-    top: 0;
+    top: 20%;
 }
 
 .contactRightCir {
