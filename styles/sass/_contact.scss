@@ -32,12 +32,21 @@
     display: flex;
     justify-content: center;
     margin: 0;
-    padding-top: 2%;
+    padding: 5% 0;
     li {
         margin: 0 2%
     }
+    i:focus,
+    i:hover {
+      color: $pink
+    }
 }
 
+.return {
+    color: $offBlack;
+}
+
+// Flairs
 .contactLeftCir {
     left: 0%;
     bottom: -20%;

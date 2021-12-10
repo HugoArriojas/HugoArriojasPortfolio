@@ -3,6 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.contentWrapper {
+  max-width: 2500px;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -319,8 +323,8 @@ h1 {
 
 .splash img {
   position: absolute;
-  height: 15%;
-  width: 10%;
+  height: 65px;
+  width: 100px;
   z-index: 0;
 }
 
@@ -338,10 +342,9 @@ h1 {
   top: 15%;
 }
 
-/* The side navigation menu */
 .sideNav {
   height: 100%;
-  width: 250px;
+  width: 275px;
   position: fixed;
   z-index: 11;
   top: 0;
@@ -349,7 +352,7 @@ h1 {
   color: #443a8b;
   background-image: linear-gradient(270deg, #443a8b 1%, #e2dfdf calc(1% + 3px));
   overflow: hidden;
-  padding-top: 5%;
+  padding-top: 10%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -358,21 +361,30 @@ h1 {
 .openSideNav {
   margin: 0;
   font-size: 20px;
-  color: #443a8b;
-  background-color: #fe6192;
+  color: #fe6192;
+  background-color: #443a8b;
+  border: 1px solid #fe6192;
   cursor: pointer;
 }
 
 .closebtn {
-  padding: 5%;
+  padding: 10%;
 }
 
 .openSideNav {
-  padding: 1%;
+  padding: 2%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
+}
+
+.closebtn:hover,
+.openSideNav:hover,
+.closebtn:focus,
+.openSideNav:focus {
+  color: #443a8b;
+  background-color: #fe6192;
 }
 
 .smallIntro {
@@ -392,15 +404,16 @@ h1 {
 .sideNav a {
   text-decoration: none;
   font-size: 25px;
-  color: #443a8b;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.sideNavLinks a {
+.sideNavLinks a,
+.socials i {
   text-align: center;
   padding: 3%;
+  color: #443a8b;
 }
 
 .sideNavContent i:focus,
@@ -414,7 +427,8 @@ h1 {
   z-index: 12;
 }
 
-/* The "fill" that hapens on focus and hover is a pseudoclass that transforms to the right, going from the scaleX of 0 to 1*/
+/* The "fill" that hapens on focus and hover is a pseudoclass 
+that transforms to the right, going from the scaleX of 0 to 1*/
 .btn-slide::before {
   content: "";
   border-radius: 0 30px 30px 0;
@@ -441,7 +455,6 @@ h1 {
           transform: scaleX(1);
 }
 
-/* Position and style the close button (top right corner) */
 .sideNav .closebtn {
   position: absolute;
   top: 0;
@@ -449,10 +462,10 @@ h1 {
   font-size: 25px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 .contentWrapper {
   -webkit-transition: margin-left 0.5s;
   transition: margin-left 0.5s;
+  margin-left: 275px;
 }
 
 .navResume {
@@ -491,8 +504,6 @@ h1 {
   background-color: #f1f1f1;
   min-width: 100%;
   min-height: 100%;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 11;
 }
 
@@ -504,7 +515,6 @@ h1 {
   padding-top: 25%;
 }
 
-/* Links inside the dropdown */
 .mobileLinks a {
   color: #232227;
   font-size: 20px;
@@ -514,7 +524,6 @@ h1 {
   display: block;
 }
 
-/* Show the dropdown menu (use JS to add this class to the .mobileLinks container when the user clicks on the dropdown button) */
 .show {
   display: block;
 }
@@ -543,7 +552,7 @@ h1 {
   width: 150px;
   position: absolute;
   left: 5%;
-  top: -5%;
+  top: -10%;
   z-index: 0;
 }
 
@@ -917,10 +926,18 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
-  padding-top: 2%;
+  padding: 5% 0;
 }
 .socials li {
   margin: 0 2%;
+}
+.socials i:focus,
+.socials i:hover {
+  color: #fe6192;
+}
+
+.return {
+  color: #232227;
 }
 
 .contactLeftCir {

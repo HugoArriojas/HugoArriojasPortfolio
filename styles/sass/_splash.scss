@@ -44,8 +44,8 @@ h1 {
 
 .splash img {
     position: absolute;
-    height: 15%;
-    width: 10%;
+    height: 65px;
+    width: 100px;
     z-index: 0;
 }
 
@@ -65,10 +65,9 @@ h1 {
 
 
 // SideNav styling
-/* The side navigation menu */
 .sideNav {
     height: 100%;
-    width: 250px; 
+    width: 275px; 
     position: fixed; 
     z-index: 11; 
     top: 0; 
@@ -77,7 +76,7 @@ h1 {
     // using backgound gradient so border doesn't spill over
     background-image: linear-gradient(270deg, $purple 1%, $gray calc(1% + 3px));
     overflow: hidden;
-    padding-top: 5%; 
+    padding-top: 10%; 
     transition: 0.4s;
   }
 
@@ -85,22 +84,30 @@ h1 {
   .openSideNav {
       margin: 0;
       font-size: 20px;
-      color: $purple;
-      background-color: $pink;
+      color: $pink;
+      background-color: $purple;
+      border: 1px solid $pink;
       cursor: pointer;
     }
     .closebtn {
-        padding: 5%;
+        padding: 10%;
     }
     
     .openSideNav {
-        padding: 1%;
+        padding: 2%;
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 10;
-        
-  }
+        z-index: 10;    
+    }
+    
+    .closebtn:hover,
+    .openSideNav:hover,
+    .closebtn:focus,
+    .openSideNav:focus {
+        color: $purple;
+        background-color: $pink;
+    }
 
   .smallIntro {
     padding: 10% 5%;
@@ -119,20 +126,20 @@ h1 {
   .sideNav a {
     text-decoration: none;
     font-size: 25px;
-    color: $purple;
     display: block;
     transition: 0.3s;
-  }
+}
 
-  .sideNavLinks a {
+.sideNavLinks a,
+.socials i {
     text-align: center;
     padding: 3%;
+    color: $purple;
   }
 
   .sideNavContent i:focus,
   .sideNavContent i:hover {
     color: $pink
-    
   }
   
 
@@ -142,7 +149,8 @@ h1 {
     z-index: 12;
 }
 
-/* The "fill" that hapens on focus and hover is a pseudoclass that transforms to the right, going from the scaleX of 0 to 1*/
+/* The "fill" that hapens on focus and hover is a pseudoclass 
+that transforms to the right, going from the scaleX of 0 to 1*/
 .btn-slide::before {
     content: "";
     border-radius: 0 30px 30px 0;
@@ -164,7 +172,7 @@ h1 {
   }
 
 
-  /* Position and style the close button (top right corner) */
+//   Positioning the side nav button to the top left
   .sideNav .closebtn {
     position: absolute;
     top: 0;
@@ -172,9 +180,10 @@ h1 {
     font-size: 25px;
   }
   
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  //pushing the page to the right on load so that the side nav opens loaded
   .contentWrapper {
     transition: margin-left .5s;
+    margin-left: 275px;
   }
 
   .navResume {
@@ -215,7 +224,6 @@ h1 {
     background-color: #f1f1f1;
     min-width: 100%;
     min-height: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 11;
   }
 
@@ -227,7 +235,7 @@ h1 {
       padding-top: 25%;
   }
   
-  /* Links inside the dropdown */
+// Links inside the mobile menu
   .mobileLinks a {
     color: $offBlack;
     font-size: 20px;
@@ -238,7 +246,7 @@ h1 {
   }
   
   
-  /* Show the dropdown menu (use JS to add this class to the .mobileLinks container when the user clicks on the dropdown button) */
+// class added to mobileMenu so that it shows up
   .show {
     display:block;
 } 
