@@ -295,7 +295,7 @@ html {
 }
 
 h1 {
-  color: #e2dfdf;
+  color: #FFF;
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
@@ -319,8 +319,8 @@ h1 {
 
 .splash img {
   position: absolute;
-  height: 3em;
-  width: 3em;
+  height: 15%;
+  width: 10%;
   z-index: 0;
 }
 
@@ -350,7 +350,6 @@ h1 {
   background-image: linear-gradient(270deg, #443a8b 1%, #e2dfdf calc(1% + 3px));
   overflow: hidden;
   padding-top: 5%;
-  /* Place content 60px from the top */
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -359,13 +358,17 @@ h1 {
 .openSideNav {
   margin: 0;
   font-size: 20px;
-  padding: 1%;
   color: #443a8b;
   background-color: #fe6192;
   cursor: pointer;
 }
 
+.closebtn {
+  padding: 5%;
+}
+
 .openSideNav {
+  padding: 1%;
   position: fixed;
   top: 0;
   left: 0;
@@ -404,7 +407,7 @@ h1 {
 /* The "fill" that hapens on focus and hover is a pseudoclass that transforms to the right, going from the scaleX of 0 to 1*/
 .btn-slide::before {
   content: "";
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 30px 30px 0;
   background-color: #fe6192;
   position: absolute;
   top: 0;
@@ -573,13 +576,13 @@ h1 {
 }
 
 .aboutImage {
-  max-width: 35%;
+  max-width: 100%;
   position: relative;
 }
 
 .headshot {
   width: 100%;
-  height: 100;
+  height: 100%;
   z-index: 3;
   border-radius: 0 0 50px 0;
 }
@@ -621,17 +624,21 @@ h1 {
   border-color: #ef5350;
   border-style: solid;
   background-color: #ef5350;
-  width: 150px;
+  width: 20%;
   height: 0;
   position: absolute;
-  left: -3%;
+  left: -1%;
 }
 
-.history {
-  margin-top: 10%;
+.history,
+.callToAction {
   font-size: 16px;
   color: #74747b;
   line-height: 1.75;
+}
+
+.history {
+  margin-top: 5%;
 }
 
 .history a {
@@ -656,6 +663,13 @@ h1 {
   text-decoration: none;
 }
 
+.aboutLinks a:hover,
+.projectLink:hover,
+.aboutLinks a:focus,
+.projectLink:focus {
+  color: #443a8b;
+}
+
 .resume {
   margin-right: 5%;
 }
@@ -672,15 +686,15 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   height: 600px;
+  position: relative;
 }
 
 .skillsWrapper {
-  width: 90%;
+  width: 50%;
   text-align: center;
   margin: 0 auto;
   color: #e2dfdf;
   padding-top: 5%;
-  position: relative;
 }
 .skillsWrapper img {
   position: absolute;
@@ -688,13 +702,23 @@ h1 {
 
 h2 {
   margin-top: 4%;
+  z-index: 5;
 }
 
 .currentSkills {
   font-size: 50px;
-  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .currentSkills i {
+  text-align: center;
   margin: 1%;
 }
 
@@ -704,21 +728,21 @@ h2 {
 
 .skillDots {
   left: -10%;
-  bottom: -50%;
-  height: 90%;
-  z-index: 1;
+  bottom: -20%;
+  height: 50%;
+  z-index: 0;
 }
 
 .skillTri {
+  top: 10%;
   right: 0;
-  top: 0;
   z-index: 0;
   width: 15%;
 }
 
 .skillCircle {
+  top: 10%;
   right: 5%;
-  top: 0;
   z-index: 1;
 }
 
@@ -759,6 +783,10 @@ h2 {
           align-items: center;
 }
 
+.project:first-of-type {
+  margin-top: 3%;
+}
+
 .project:last-of-type {
   margin-bottom: 0;
 }
@@ -788,14 +816,10 @@ h2 {
   left: -20%;
 }
 
-.projectDotsLeft,
-.projectDotsRight {
+.projectDots {
   position: absolute;
   z-index: 0;
   width: 70%;
-}
-
-.projectDotsRight {
   right: -10%;
   top: 10%;
 }
@@ -805,12 +829,6 @@ h2 {
   margin: 0 3%;
   position: relative;
   z-index: 3;
-}
-
-.projectDotsLeft {
-  left: 0;
-  bottom: 0;
-  z-index: -1;
 }
 
 .projectScreen {
@@ -908,6 +926,88 @@ h2 {
   }
 
   .openSideNav {
+    display: none;
+  }
+
+  .aboutContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .aboutWrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .aboutImage {
+    width: 70%;
+  }
+
+  .intro,
+.history {
+    text-align: justify;
+  }
+
+  .aboutLinks {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
+  .currentSkills {
+    font-size: 40px;
+    margin: 1%;
+  }
+
+  .portfolio {
+    background-image: linear-gradient(1deg, #FFF 99%, #443a8b calc(99% + 2px));
+  }
+
+  .project {
+    margin: 5% 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .project:nth-of-type(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .projectScreen {
+    width: 75%;
+  }
+
+  .projectTitle {
+    margin: 1% 0;
+    text-align: center;
+  }
+
+  .right,
+.left {
+    text-align: justify;
+  }
+
+  .projectLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
+  .projectDots,
+.graySquareRight,
+.graySquareLeft,
+.contactSquig,
+.contactRightCir {
     display: none;
   }
 }

@@ -3,9 +3,7 @@
 	display: flex;
 	align-items: center;
 	overflow: hidden;
-
 }
-
 
 .portfolioWrapper {
 	width: 90%;
@@ -27,6 +25,10 @@
 	margin: 8% 0;
 	display: flex;
 	align-items: center;
+}
+
+.project:first-of-type {
+	margin-top: 3%;
 }
 
 .project:last-of-type {
@@ -58,14 +60,10 @@
 	left: -20%;	
 }
 
-.projectDotsLeft, 
-.projectDotsRight {
+.projectDots {
 	position: absolute;
 	z-index: 0;
 	width: 70%;
-}
-
-.projectDotsRight {
 	right: -10%;
 	top: 10%;
 }
@@ -78,11 +76,6 @@
 	z-index: 3;
 }
 
-.projectDotsLeft {
-	left: 0;
-	bottom: 0;
-	z-index: -1;
-}
 
 .projectScreen {
 	width: 100%;

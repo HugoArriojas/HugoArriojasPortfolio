@@ -20,7 +20,7 @@
 }
 
 h1 {
-    color: $gray;
+    color: #FFF;
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
@@ -44,8 +44,8 @@ h1 {
 
 .splash img {
     position: absolute;
-    height: 3em;
-    width: 3em;
+    height: 15%;
+    width: 10%;
     z-index: 0;
 }
 
@@ -67,8 +67,8 @@ h1 {
 // SideNav styling
 /* The side navigation menu */
 .sideNav {
-    height: 100%; // full viewport size
-    width: 0; // 0 to start
+    height: 100%;
+    width: 0; 
     position: fixed; 
     z-index: 11; 
     top: 0; 
@@ -77,7 +77,7 @@ h1 {
     // using backgound gradient so border doesn't spill over
     background-image: linear-gradient(270deg, $purple 1%, $gray calc(1% + 3px));
     overflow: hidden;
-    padding-top: 5%; /* Place content 60px from the top */
+    padding-top: 5%; 
     transition: 0.4s;
   }
 
@@ -85,13 +85,16 @@ h1 {
   .openSideNav {
       margin: 0;
       font-size: 20px;
-      padding: 1%;
       color: $purple;
       background-color: $pink;
       cursor: pointer;
     }
+    .closebtn {
+        padding: 5%;
+    }
     
     .openSideNav {
+        padding: 1%;
         position: fixed;
         top: 0;
         left: 0;
@@ -131,7 +134,7 @@ h1 {
 /* The "fill" that hapens on focus and hover is a pseudoclass that transforms to the right, going from the scaleX of 0 to 1*/
 .btn-slide::before {
     content: "";
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 30px 30px 0;
     background-color: $pink;
     position: absolute;
     top: 0;
@@ -225,3 +228,16 @@ h1 {
   .show {
     display:block;
 } 
+
+
+
+
+// .current {
+//     color: yellow;
+//     background-color: orange;
+// }
+
+// .current::before {
+//     content: "➞";
+// }
+

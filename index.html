@@ -37,7 +37,7 @@
             I'm a <span>web developer</span> currently living in Ottawa, Canada 🇨🇦
           </p>
           <ul class="sideNavLinks">
-            <li class="current btn-slide"><a href="#home">Home</a></li>
+            <li class="btn-slide"><a href="#home" class="current">Home</a></li>
             <li><a href="#about" class="btn-slide">About</a></li>
             <li><a href="#skills" class="btn-slide">Skills</a></li>
             <li><a href="#portfolio" class="btn-slide">Portfolio</a></li>
@@ -92,7 +92,7 @@
               I'm a <span>web developer</span> currently living in Ottawa, Canada 🇨🇦
             </p>
             <ul class="mobileList">
-              <li><a href="#home" class="active btn-slide">Home</a></li>
+              <li><a href="#home" class="current btn-slide">Home</a></li>
               <li><a href="#about" class="btn-slide">About</a></li>
               <li><a href="#skills" class="btn-slide">Skills</a></li>
               <li><a href="#portfolio" class="btn-slide">Portfolio</a></li>
@@ -148,15 +148,13 @@
                 <div class="pinkLine"></div>
                 <p class="history">
                   I graduated from <a href="https://www.dal.ca/">Dalhousie University</a> with a degree in marine
-                  biology & statistics and recently graduated from <a href="http://www.junocollege.com">Juno
-                    College's</a> Immersive Web Development Bootcamp when I learned a variety of front-end and database
+                  biology & statistics and recently graduated from <a href="http://www.junocollege.com">Juno College's</a> Immersive Web Development Bootcamp when I learned a variety of front-end and database
                   manipulation methods.
                   Due to my background in marine data science, I excel in client-facing and challenging data-driven
                   positions and hope to use these skills to create a more accessible web for everyone.
                 </p>
-                <p class="history">
-                  If you like what you see in my portfolio, send me a message and we can create something beautiful,
-                  together.
+                <p class="callToAction">
+                  If you like what you see in my portfolio, send me a message and we can create something beautiful, together.
                 </p>
                 <div class="aboutLinks">
                   <a href="./assets/about/Hugo-Arriojas-Resume.pdf" download class="resume">Resume</a>
@@ -181,13 +179,13 @@
             <i class="fab fa-git-square"></i>
             <i class="devicon-vscode-plain"></i>
             <i class="fas fa-code-branch"></i>
-          </p>
-          <p class="currentSkills">
+          <!-- </p>
+          <p class="currentSkills"> -->
             <i class="fab fa-sass"></i>
             <i class="fab fa-react"></i>
             <i class="devicon-firebase-plain"></i>
             <i class="fab fa-figma"></i>
-            <i class="devicon-photoshop-plain"></i>
+            <i class="devicon-photoshop-plain"></i> 
             <i class="devicon-premierepro-plain"></i>
           </p>
           <h2 class="learningTitle">Learning Next:</h2>
@@ -214,13 +212,15 @@
                 In the app, users can filter through a variety of products via category and then convert productprices
                 to different currencies.
               </p>
-              <a href="https://reactiveretail.netlify.app/" class="projectLink">Live Project</a>
-              <a href="https://github.com/HugoArriojas/ReactiveRetail" class="projectLink git">Github</a></p>
+              <div class="projectLinks">
+                <a href="https://reactiveretail.netlify.app/" class="projectLink">Live Project</a>
+                <a href="https://github.com/HugoArriojas/ReactiveRetail" class="projectLink git">Github</a></p>
+              </div>
             </div>
             <div class="projectImage">
               <div class="graySquareRight"></div>
               <img src="./assets/portfolio/reactiveRetailScreens.png" alt="" class="projectScreen">
-              <img src="./assets/portfolio/projectDots.png" alt="" class="projectDotsRight">
+              <img src="./assets/portfolio/projectDots.png" alt="" class="projectDots">
             </div>
           </div>
 
@@ -236,24 +236,24 @@
                 week. The user can search any city and receive the weekly forecast along with representative GIFs of the
                 weather as well as an activity suggestion for the day.
               </p>
-              <a href="https://gifmetheweather.netlify.app/" class="projectLink">Live Project</a>
-              <a href="https://github.com/hugElla/gifMeTheWeather" class="projectLink git">Github</a></p>
+              <div class="projectLinks">
+                <a href="https://gifmetheweather.netlify.app/" class="projectLink">Live Project</a>
+                <a href="https://github.com/hugElla/gifMeTheWeather" class="projectLink git">Github</a></p>
+              </div>
             </div>
             </h3>
           </div>
 
           <div class="project">
             <div class="projectText right">
-              <!-- <img src="./assets/portfolio/projectDots.png" alt="" class="projectDotsLeft"> -->
               <h3 class="projectTitle">Not So Social Event Planner</h3>
               <p class="projectDesc">
-                This React group project works as a social planner wherein users are able to submit recurring weekly
-                events into a calendar. Should the user choose to not go through with their social commitments, they are
-                able to check out what shows are streaming at the time. This exercise simulates an agency-style
-                environment, the project scope being outlined in a client brief as would be seen in a typical workplace.
+                This React group project works as a social planner where users are able to submit weekly events into a planner. Should the user choose to not go through with their social commitments, they are able to check out what shows are streaming at the time. This agency-style exercise, the project scope being outlined in a client brief as would be seen in a typical workplace.
               </p>
-              <a href="https://notsosocialplanner.netlify.app/" class="projectLink">Live Project</a>
-              <a href="https://github.com/Hugo-Liz-Linda-Ryan/NotSoSocialEventPlanner" class="projectLink git">Github</a>
+              <div class="projectLinks">
+                <a href="https://notsosocialplanner.netlify.app/" class="projectLink">Live Project</a>
+                <a href="https://github.com/Hugo-Liz-Linda-Ryan/NotSoSocialEventPlanner" class="projectLink git">Github</a>
+              </div>
               </p>
             </div>
             <div class="projectImage">
@@ -274,8 +274,10 @@
                 This was a multi-page conversion of a PSD design given to us in our bootcamp. Our task was to make a
                 multi-page functional and responsive site, while maintaining good practices for accessibility.
               </p>
-              <a href="https://deliciouspsd.netlify.app/" class="projectLink">Live Project</a>
-              <a href="https://github.com/HugoArriojas/deliciousPSDConversion" class="projectLink git">Github</a></p>
+              <div class="projectLinks">
+                <a href="https://deliciouspsd.netlify.app/" class="projectLink">Live Project</a>
+                <a href="https://github.com/HugoArriojas/deliciousPSDConversion" class="projectLink git">Github</a></p>
+              </div>
             </div>
           </div>
         </div>

@@ -7,6 +7,84 @@
         display: none;
     }
 
+    // about section
+    .aboutContent {
+        flex-direction: column;
+    }
+
+    .aboutWrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .aboutImage {
+        width: 70%;
+    }
+
+    .intro, 
+    .history {
+        text-align: justify;
+    }
+
+    .aboutLinks {
+        justify-content: space-evenly;
+    }
+
+    // Skills section 
+
+    .currentSkills {
+        font-size: 40px;
+        margin: 1%;
+    }
+
+
+    // Portfolio Section
+
+    .portfolio {
+        background-image: linear-gradient(1deg, #FFF 99%, $purple calc(99% + 2px));
+    }
+
+
+    .project {
+        margin: 5% 0;
+        flex-direction: column-reverse;
+    }
+
+    .project:nth-of-type(even) {
+        flex-direction: column;
+    }
+
+    .projectScreen {
+        width: 75%;
+    }
+
+    .projectTitle {
+        margin: 1% 0;
+        text-align: center;
+    }
+
+    .right,
+    .left {
+        text-align: justify;
+    }
+
+    .projectLinks {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    // portfolio/contact Section flairs
+    .projectDots,
+    .graySquareRight,
+    .graySquareLeft,
+    .contactSquig,
+    .contactRightCir {
+        display: none;
+    }
+
+
+
 
 }
 

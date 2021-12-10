@@ -4,16 +4,16 @@
     justify-content: center;
     align-items: center;
     height: 600px;
+    position: relative;
 }
 
 
 .skillsWrapper {
-    width: 90%;
+    width: 50%;
     text-align: center;
     margin: 0 auto;
     color: $gray;
     padding-top: 5%;
-    position: relative;
     img {
         position: absolute;
     }
@@ -21,13 +21,19 @@
 
 h2 {
     margin-top: 4%;
+    z-index: 5;
 }
 
 .currentSkills {
     font-size: 50px;
-    z-index: 2;
+    // z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
     i {
-        margin: 1%;
+        text-align: center;
+        margin: 1%;;
     }
 }
 
@@ -37,20 +43,20 @@ h2 {
 
 .skillDots {
     left: -10%;
-    bottom: -50%;
-    height: 90%;
-    z-index: 1;
+    bottom: -20%;
+    height: 50%;
+    z-index: 0;
 }
 
 .skillTri {
+    top: 10%;
     right: 0;
-    top: 0;
     z-index: 0;
     width: 15%;
 }
 
 .skillCircle {
+    top: 10%;
     right: 5%;
-    top: 0;
     z-index: 1;
 }
