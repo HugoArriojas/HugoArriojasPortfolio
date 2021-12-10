@@ -209,14 +209,16 @@ h1 {
 
   .mobileIntro {
       width: 75%;
+      font-size: 18px;
       margin: 0 auto;
       text-align: center;
-      padding-top: 15%;
+      padding-top: 25%;
   }
   
   /* Links inside the dropdown */
   .mobileLinks a {
     color: $offBlack;
+    font-size: 20px;
     padding: 3%;
     text-align: center;
     text-decoration: none;

@@ -487,14 +487,16 @@ h1 {
 
 .mobileIntro {
   width: 75%;
+  font-size: 18px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 15%;
+  padding-top: 25%;
 }
 
 /* Links inside the dropdown */
 .mobileLinks a {
   color: #232227;
+  font-size: 20px;
   padding: 3%;
   text-align: center;
   text-decoration: none;
@@ -1009,5 +1011,46 @@ h2 {
 .contactSquig,
 .contactRightCir {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .splash {
+    height: 80vh;
+  }
+
+  .splashSquig {
+    display: none;
+  }
+
+  .splashTripSquig {
+    width: 50%;
+  }
+
+  .first {
+    font-size: 40px;
+  }
+
+  .last {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+
+  .skills {
+    height: 75vh;
+  }
+
+  .skillsWrapper {
+    width: 70%;
+  }
+
+  .portfolio {
+    background-image: linear-gradient(2deg, #FFF 99%, #443a8b calc(99% + 2px));
   }
 }
