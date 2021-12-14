@@ -27,6 +27,7 @@ function openNav() {
     document.getElementById("sideNav").style.width = "275px";
     document.getElementById("mainContent").style.marginLeft = "275px";
     // Making sidebar extent on small screen
+    
   } else if (smallScreen.matches) {
     document.getElementById("sideNav").style.width = "100%";
   }
