@@ -137,6 +137,8 @@ h1 {
     color: $purple;
   }
 
+  .sideNavContent a:focus,
+  .sideNavContent a:hover,
   .sideNavContent i:focus,
   .sideNavContent i:hover {
     color: $pink

@@ -416,6 +416,8 @@ h1 {
   color: #443a8b;
 }
 
+.sideNavContent a:focus,
+.sideNavContent a:hover,
 .sideNavContent i:focus,
 .sideNavContent i:hover {
   color: #fe6192;
