@@ -1,19 +1,30 @@
 @media (max-width: 768px) {
-    .menuIcon {
-        display: block;
-    }
 
+    // Side nav styling
+    // So side nav doesn't start open on smaller screens
+    .openSideNav,
+    .sideNav .closebtn {
+        padding: 25px;
+        width: 75px;
+        height: 75px;
+        top: auto;
+        bottom: 0;
+
+    }
+    
     .sideNav {
-        display: none;
+        padding-top: 2%;
+        width: 0;
     }
 
     .contentWrapper {
         margin-left: 0;
     }
 
-    .openSideNav {
-        display: none;
+    .smallIntro {
+        padding: 3%;
     }
+
 
     // about section
     .aboutContent {
@@ -92,11 +103,6 @@
 }
 
 @media (max-width: 480px) {
-
-    // Splash section styling
-    .menuIcon {
-        padding: 6%;
-    }
     
     .splash {
         height: 80vh

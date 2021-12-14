@@ -191,67 +191,7 @@ that transforms to the right, going from the scaleX of 0 to 1*/
   }
 
 
-// Dropdown Menu Styling
- /* Dropdown Button */
- .menuIcon {
-    background-color: $gray;
-    color: $offBlack;
-    padding: 4%;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    display: none;
-    position: fixed;
-    top: 5px;
-    right: 5px;
-    border-radius: 20px;
-    z-index: 10;
-    border: 1px solid $offBlack;
-  }
   
-  /* Dropdown button on hover & focus */
-  .menuIcon:hover, 
-  .menuIcon:focus {
-    background-color: $pink;
-  }
-
-   /* Dropdown Content (Hidden by Default) */
-   .mobileLinks {
-    display: none;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    background-color: #f1f1f1;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 11;
-  }
-
-  .mobileIntro {
-      width: 75%;
-      font-size: 18px;
-      margin: 0 auto;
-      text-align: center;
-      padding-top: 25%;
-  }
-  
-// Links inside the mobile menu
-  .mobileLinks a {
-    color: $offBlack;
-    font-size: 20px;
-    padding: 3%;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-  }
-  
-  
-// class added to mobileMenu so that it shows up
-  .show {
-    display:block;
-} 
-
-
 
 
 // .current {

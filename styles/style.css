@@ -472,62 +472,6 @@ that transforms to the right, going from the scaleX of 0 to 1*/
   margin: 0;
 }
 
-/* Dropdown Button */
-.menuIcon {
-  background-color: #e2dfdf;
-  color: #232227;
-  padding: 4%;
-  font-size: 20px;
-  border: none;
-  cursor: pointer;
-  display: none;
-  position: fixed;
-  top: 5px;
-  right: 5px;
-  border-radius: 20px;
-  z-index: 10;
-  border: 1px solid #232227;
-}
-
-/* Dropdown button on hover & focus */
-.menuIcon:hover,
-.menuIcon:focus {
-  background-color: #fe6192;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.mobileLinks {
-  display: none;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  background-color: #f1f1f1;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 11;
-}
-
-.mobileIntro {
-  width: 75%;
-  font-size: 18px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 25%;
-}
-
-.mobileLinks a {
-  color: #232227;
-  font-size: 20px;
-  padding: 3%;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-}
-
-.show {
-  display: block;
-}
-
 .about {
   background-image: linear-gradient(185deg, #e2dfdf 70%, white calc(70% + 2px));
   height: 100%;
@@ -962,20 +906,26 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .menuIcon {
-    display: block;
+  .openSideNav,
+.sideNav .closebtn {
+    padding: 25px;
+    width: 75px;
+    height: 75px;
+    top: auto;
+    bottom: 0;
   }
 
   .sideNav {
-    display: none;
+    padding-top: 2%;
+    width: 0;
   }
 
   .contentWrapper {
     margin-left: 0;
   }
 
-  .openSideNav {
-    display: none;
+  .smallIntro {
+    padding: 3%;
   }
 
   .aboutContent {
@@ -1059,10 +1009,6 @@ h2 {
   }
 }
 @media (max-width: 480px) {
-  .menuIcon {
-    padding: 6%;
-  }
-
   .splash {
     height: 80vh;
   }

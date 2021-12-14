@@ -20,8 +20,18 @@ function openDropdown() {
 // SideNav Styling
   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
+  const bigScreen = window.matchMedia('(min-width: 768px)')
+  const smallScreen = window.matchMedia('(max-width: 767px)')
+
+  if (bigScreen.matches) {
     document.getElementById("sideNav").style.width = "275px";
     document.getElementById("mainContent").style.marginLeft = "275px";
+    // Making sidebar extent on small screen
+  } else if (smallScreen.matches) {
+    document.getElementById("sideNav").style.width = "100%";
+  }
+
+
   }
 // Setting nav width to 0
   function closeNav() {
