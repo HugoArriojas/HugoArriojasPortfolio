@@ -328,9 +328,10 @@ h1 {
   z-index: 0;
 }
 
-.splashArrow {
+.splash .splashArrow {
   right: 10%;
   bottom: 25%;
+  width: 70px;
 }
 
 .splashSquig {
@@ -416,8 +417,8 @@ h1 {
   color: #443a8b;
 }
 
-.sideNavContent a:focus,
-.sideNavContent a:hover,
+.sideNavContent fab:focus,
+.sideNavContent fab:hover,
 .sideNavContent i:focus,
 .sideNavContent i:hover {
   color: #fe6192;
@@ -918,7 +919,7 @@ h2 {
   }
 
   .sideNav {
-    padding-top: 2%;
+    padding-top: 5%;
     width: 0;
   }
 

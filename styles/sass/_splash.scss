@@ -49,10 +49,12 @@ h1 {
     z-index: 0;
 }
 
-.splashArrow {
+.splash .splashArrow {
     right: 10%;
     bottom: 25%;
+    width: 70px;
 }
+
 
 .splashSquig {
     left: 10%;
@@ -137,8 +139,8 @@ h1 {
     color: $purple;
   }
 
-  .sideNavContent a:focus,
-  .sideNavContent a:hover,
+  .sideNavContent fab:focus,
+  .sideNavContent fab:hover,
   .sideNavContent i:focus,
   .sideNavContent i:hover {
     color: $pink
@@ -193,7 +195,10 @@ that transforms to the right, going from the scaleX of 0 to 1*/
   }
 
 
-  
+
+
+
+//   Styling for current section
 
 
 // .current {
