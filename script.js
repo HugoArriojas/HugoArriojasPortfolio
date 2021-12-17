@@ -32,8 +32,15 @@ function openNav() {
     document.getElementById("sideNav").style.width = "100%";
   }
 
+}
 
-  }
+function closeMobileNav () {
+  const smallScreen = window.matchMedia('(max-width: 767px)')
+  if (smallScreen.matches) {
+    document.getElementById("sideNav").style.width = "0";
+}
+}
+
 // Setting nav width to 0
   function closeNav() {
     document.getElementById("sideNav").style.width = "0";
