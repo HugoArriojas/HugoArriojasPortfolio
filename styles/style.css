@@ -274,6 +274,13 @@ html {
   overflow: hidden;
 }
 
+.hidden {
+  position: absolute;
+  left: -99999px;
+  overflow: hidden;
+  display: none;
+}
+
 .splash {
   height: 95vh;
   background-image: linear-gradient(170deg, #443a8b 70%, #e2dfdf calc(70% + 2px));

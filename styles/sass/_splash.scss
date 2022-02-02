@@ -1,7 +1,9 @@
 // Hidden SEO Title
-h1 .hidden {
+.hidden {
     position: absolute;
     left: -99999px;
+    overflow: hidden;
+    display: none;
   }
 
 // Splash page styling
