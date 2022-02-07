@@ -36,14 +36,14 @@
         <nav class="sideNavContent">
           <p class="smallIntro">
             Hi, I'm Hugo!
-            I'm a <span>web developer</span> currently living in Ottawa, Canada 🇨🇦
+            I'm a <span>web developer</span> in Ottawa 🇨🇦
           </p>
           <ul class="sideNavLinks" onclick=closeMobileNav()>
-            <li class="btn-slide"><a href="#home" class="current">Home</a></li>
-            <li><a href="#about" class="btn-slide">About</a></li>
-            <li><a href="#skills" class="btn-slide">Skills</a></li>
-            <li><a href="#portfolio" class="btn-slide">Portfolio</a></li>
-            <li><a href="#contact" class="btn-slide">Contact</a></li>
+            <li class="btn-slide"><a href="#home" class="home active">Home</a></li>
+            <li><a href="#about" class="about btn-slide">About</a></li>
+            <li><a href="#skills" class="skills btn-slide">Skills</a></li>
+            <li><a href="#portfolio" class="portfolio btn-slide">Portfolio</a></li>
+            <li><a href="#contact" class="contact btn-slide">Contact</a></li>
             <li>
               <a href="./assets/about/Hugo-Arriojas-Resume.pdf" download class="btn-slide">
                 <p class="navResume">Resume</p>
@@ -80,10 +80,10 @@
     <div class="contentWrapper" id="mainContent">
       <!-- SideNav open -->
       <p class="openSideNav" onclick="openNav()">→</p>
+      
       <!-- Splash page -->
       <section class="splash" id="home">
         <div class="splashWrapper">
-
           <div class="nameTitle">
             <div class="name">
               <h1 class="first">Hugo</h1>
@@ -264,7 +264,7 @@
 
 
       <!-- Contact -->
-      <div class="contact" id="contact">
+      <section class="contact" id="contact">
         <div class="contactWrapper">
           <h2>Contact Me</h2>
           <p>Thank you very much for visiting my site!</p>
@@ -294,7 +294,7 @@
         <img src="./assets/contact/projectSquiggles.png" alt="three parallel wavy blue lines" class="contactSquig" aria-hidden="true">
         <img src="./assets/contact/rightCircle.png" alt="pink circle" class="contactRightCir" aria-hidden="true">
         <img src="./assets/contact/rightTriangle.png" alt="purple triangle" class="contactTri" aria-hidden="true">
-      </div>
+      </section>
       <!-- /Contact -->
 
     </div>

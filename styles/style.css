@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-family: "Montserrat";
   scroll-behavior: smooth;
@@ -10,6 +11,17 @@ html {
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+.active::before {
+  content: "➞";
+  color: red;
+}
+
+.active {
+  background-color: orange;
+  -webkit-transition: 0.3 ease background-color;
+  transition: 0.3 ease background-color;
 }
 
 html {
@@ -482,7 +494,7 @@ that transforms to the right, going from the scaleX of 0 to 1*/
   margin: 0;
 }
 
-.about {
+section.about {
   background-image: linear-gradient(185deg, #e2dfdf 70%, white calc(70% + 2px));
   height: 100%;
 }
@@ -650,7 +662,7 @@ that transforms to the right, going from the scaleX of 0 to 1*/
   margin-right: 5%;
 }
 
-.skills {
+section.skills {
   background-image: linear-gradient(-5deg, #443a8b 80%, #FFF calc(80% + 2px));
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,7 +734,7 @@ h2 {
   z-index: 1;
 }
 
-.portfolio {
+section.portfolio {
   background-image: linear-gradient(4deg, #FFF 95%, #443a8b calc(95% + 2px));
   display: -webkit-box;
   display: -ms-flexbox;
@@ -836,7 +848,7 @@ h2 {
   margin-left: 5%;
 }
 
-.contact {
+section.contact {
   text-align: center;
   background-image: linear-gradient(-3deg, #e2dfdf 80%, #FFF calc(80% + 2px));
   overflow: hidden;
@@ -852,18 +864,18 @@ h2 {
           align-items: center;
   position: relative;
 }
-.contact span {
+section.contact span {
   color: #fe6192;
 }
-.contact a {
+section.contact a {
   color: #232227;
   font-size: 30px;
 }
-.contact a:focus,
-.contact a:hover {
+section.contact a:focus,
+section.contact a:hover {
   color: #fe6192;
 }
-.contact img {
+section.contact img {
   position: absolute;
   z-index: 0;
 }
