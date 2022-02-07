@@ -202,18 +202,21 @@ that transforms to the right, going from the scaleX of 0 to 1*/
   }
 
 
+  // styling for "current" section that user is on
+.active::before {
+  content: "";
+    border-radius: 0 30px 30px 0;
+    background-color: $pink;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    left: 0;
+    bottom: 0;
+    z-index: -5;
+    transform: scaleX(1);
+    transition: transform 300ms ease-in-out;
+    transform-origin: left;
+}
 
 
-
-//   Styling for current section
-
-
-// .current {
-//     color: yellow;
-//     background-color: orange;
-// }
-
-// .current::before {
-//     content: "➞";
-// }
 
