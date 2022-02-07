@@ -439,6 +439,7 @@ h1 {
 
 /* The "fill" that hapens on focus and hover is a pseudoclass 
 that transforms to the right, going from the scaleX of 0 to 1*/
+.active::before,
 .btn-slide::before {
   content: "";
   border-radius: 0 30px 30px 0;
@@ -484,22 +485,13 @@ that transforms to the right, going from the scaleX of 0 to 1*/
 
 .active::before {
   content: "";
-  border-radius: 0 30px 30px 0;
   background-color: #fe6192;
-  position: absolute;
-  top: 0;
-  right: 5%;
-  left: 0;
-  bottom: 0;
-  z-index: -5;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
 }
 
 section.about {
@@ -908,10 +900,6 @@ section.contact img {
 .socials i:focus,
 .socials i:hover {
   color: #fe6192;
-}
-
-.return {
-  color: #232227;
 }
 
 .contactLeftCir {
