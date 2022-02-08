@@ -1,5 +1,5 @@
 
-section.about {
+div.about {
 	// Need the calc in order to smooth line in gradient
 	background-image: linear-gradient(185deg, $gray 70%, white calc(70% + 2px));
 	height: 100%;
@@ -93,10 +93,10 @@ section.about {
 
 .aboutDots {
 	position: absolute;
-	height: 300px;
-	width: 300px;
-	z-index: -2;
-	top: 30%;
+	height: 125%;
+	width: 100%;
+	z-index: 1;
+	top: -10%;
 	left: 0;
 }
 
@@ -131,9 +131,8 @@ section.about {
 	line-height: 1.75;
 }
 
-.history {
+.history:first-of-type {
 	margin-top: 5%;
-
 }
 
 .history a {

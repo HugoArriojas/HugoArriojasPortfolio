@@ -60,7 +60,7 @@ window.addEventListener("scroll", () => {
     // Checks how much we've scrolled on the page
     const sectionHeight = section.clientHeight;
 
-    if (scrollY >= (sectionTop - sectionHeight / 4)) {
+    if (scrollY >= (sectionTop - sectionHeight / 3.9)) {
       current = section.getAttribute("id");
     }
   })
