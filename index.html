@@ -36,14 +36,13 @@
         <nav class="sideNavContent">
           <p class="smallIntro">
             Hi, I'm Hugo!
-            I'm a <span>web developer</span> currently living in Ottawa, Canada 🇨🇦
+            I'm a <span>web developer</span> in Ottawa 🇨🇦
           </p>
           <ul class="sideNavLinks" onclick=closeMobileNav()>
-            <li class="btn-slide"><a href="#home" class="current">Home</a></li>
-            <li><a href="#about" class="btn-slide">About</a></li>
-            <li><a href="#skills" class="btn-slide">Skills</a></li>
-            <li><a href="#portfolio" class="btn-slide">Portfolio</a></li>
-            <li><a href="#contact" class="btn-slide">Contact</a></li>
+            <li class="btn-slide"><a href="#home" class="home active">Home</a></li>
+            <li><a href="#about" class="about btn-slide">About</a></li>
+            <li><a href="#portfolio" class="portfolio btn-slide">Portfolio</a></li>
+            <li><a href="#contact" class="contact btn-slide">Contact</a></li>
             <li>
               <a href="./assets/about/Hugo-Arriojas-Resume.pdf" download class="btn-slide">
                 <p class="navResume">Resume</p>
@@ -80,10 +79,10 @@
     <main class="contentWrapper" id="mainContent">
       <!-- SideNav open -->
       <p class="openSideNav" onclick="openNav()">→</p>
+
       <!-- Splash page -->
       <section class="splash" id="home">
         <div class="splashWrapper">
-
           <div class="nameTitle">
             <div class="name">
               <h1 class="first">Hugo</h1>
@@ -91,9 +90,12 @@
             </div>
             <p class="subtitle">Web Developer</p>
           </div>
-          <img src="./assets/splash/arrow.png" alt="Wavy green arrow" class="splashArrow" aria-hidden="true" aria-hidden="true">
-          <img src="./assets/splash/squiggle.png" alt="Wavy pink line" class="splashSquig" aria-hidden="true" aria-hidden="true">
-          <img src="./assets/splash/tripleSquiggle.png" alt="Three parallel blue lines" class="splashTripSquig" aria-hidden="true" aria-hidden="true">
+          <img src="./assets/splash/arrow.png" alt="Wavy green arrow" class="splashArrow" aria-hidden="true"
+            aria-hidden="true">
+          <img src="./assets/splash/squiggle.png" alt="Wavy pink line" class="splashSquig" aria-hidden="true"
+            aria-hidden="true">
+          <img src="./assets/splash/tripleSquiggle.png" alt="Three parallel blue lines" class="splashTripSquig"
+            aria-hidden="true" aria-hidden="true">
         </div>
       </section>
       <!-- /Splash -->
@@ -101,79 +103,79 @@
       <!-- About -->
       <section class="about" id="about">
         <div class="aboutWrapper">
-          <img src="./assets/about/aboutLeft.png" alt="purple circle and pink triangle" class="aboutLeft" aria-hidden="true">
-          <img src="./assets/about/circleRight.png" alt="purple circle" class="aboutRight" aria-hidden="true">
-          <div class="aboutMain">
-            <div class="heading">
-              <p class="subheading"><span class="verticalLine">|</span> about me</p>
-              <h2 class="sectionTitle">Hello</h2>
-            </div>
-            <div class="aboutContent">
-              <div class="aboutImage">
-                <img src="./assets/about/hugoHeadshot.png" alt="" class="headshot">
-                <div class="graySquare"></div>
-                <img src="./assets/about/dottedCircle.png" alt="" class="aboutDots">
+          <div class="about">
+            <img src="./assets/about/aboutLeft.png" alt="purple circle and pink triangle" class="aboutLeft"
+              aria-hidden="true">
+            <img src="./assets/about/circleRight.png" alt="purple circle" class="aboutRight" aria-hidden="true">
+            <div class="aboutMain">
+              <div class="heading">
+                <p class="subheading"><span class="verticalLine">|</span> about me</p>
+                <h2 class="sectionTitle">Hello</h2>
               </div>
-              <div class="aboutText">
-                <p class="intro">
-                  My name is Hugo Arriojas (Ah-ree-oh-has) and I am a front-end web developer with a passion for problem solving and
-                  hope to work with you to bring our design to life
-                </p>
-                <div class="pinkLine"></div>
-                <p class="history">
-                  I graduated from <a href="https://www.dal.ca/">Dalhousie University</a> with a degree in marine
-                  biology & statistics and recently graduated from <a href="http://www.junocollege.com">Juno
-                    College's</a> Immersive Web Development Bootcamp when I learned a variety of front-end and database
-                  manipulation methods.
-                  Due to my background in marine data science, I excel in client-facing and challenging data-driven
-                  positions and hope to use these skills to create a more accessible web for everyone.
-                </p>
-                <p class="callToAction">
-                  If you like what you see in my portfolio, send me a message and we can create something beautiful,
-                  together.
-                </p>
-                <div class="aboutLinks">
-                  <a href="./assets/about/Hugo-Arriojas-Resume.pdf" download class="resume">Resume</a>
-                  <a href="#contact">Contact</a>
+              <div class="aboutContent">
+                <div class="aboutImage">
+                  <img src="./assets/about/hugoHeadshot.png" alt="" class="headshot">
+                  <div class="graySquare"></div>
+                  <img src="./assets/about/dottedCircle.png" alt="" class="aboutDots">
                 </div>
-              </div>
-            </div>
+
+                <div class="aboutText">
+                  <p class="intro">
+                    My name is Hugo Arriojas (Ah-ree-oh-has) and I am a front-end web developer with a passion for problem solving and hope to work with you to bring our design to life.
+                  </p>
+                  <div class="pinkLine"></div>
+                  <p class="history">
+                    I'm a graduate of <a href="https://www.dal.ca/">Dalhousie University</a> & <a href="http://www.junocollege.com">Juno College's</a> Immersive Web Development Bootcamp and I love using my diverse set of skills to build accessible and immersive user experiences. As an ex-marine biologist, I have a strong passion for science, and I aim to bring the same propensity for precision into my code. 
+                  
+                  </p>
+                  <p class="history">
+                    Born & raised in Venezuela, I hope to use my skills to create a more accessible web for everyone and to create a more interconnected world.  I excel in client-facing and challenging data-driven positions and I’m always working towards learning more technologies and improving my current stack as a developer.
+                  </p>
+                  <p class="callToAction">
+                    If you like what you see in my portfolio, send me a message and we can create something beautiful, together!
+                  </p>
+
+                  <div class="aboutLinks">
+                    <a href="./assets/about/Hugo-Arriojas-Resume.pdf" download class="resume">Resume</a>
+                    <a href="#contact">Contact</a>
+                  </div> <!-- /aboutLinks -->
+                </div> <!-- /aboutText -->
+              </div> <!-- /aboutContent -->
+            </div> <!-- /aboutMain -->
+          </div> <!-- /about -->
+        </div> <!-- /aboutWrapper -->
+
+        <!-- Skills -->
+        <div class="skills">
+          <div class="skillsWrapper">
+            <h2 class="skillsTitle">Current Skills:</h2>
+            <p class="currentSkills">
+              <i class="fab fa-html5" aria-label="HTML5"></i>
+              <i class="fab fa-css3-alt" aria-label="CSS3"></i>
+              <i class="devicon-jquery-plain" aria-label="jQuery"></i>
+              <i class="fab fa-js-square" aria-label="Javascript"></i>
+              <i class="fab fa-git-square" aria-label="Git collaboration"></i>
+              <i class="devicon-vscode-plain" aria-label="VS Code"></i>
+              <i class="fas fa-code-branch" aria-label="Git branching and version control"></i>
+              <i class="fab fa-sass" aria-label="Sass"></i>
+              <i class="fab fa-react" aria-label="React"></i>
+              <i class="devicon-firebase-plain" aria-label="Firebase"></i>
+              <i class="fab fa-figma" aria-label="Figma"></i>
+              <i class="devicon-photoshop-plain" aria-label="Adobe Photoshop"></i>
+              <i class="devicon-premierepro-plain" aria-label="Premiere Pro"></i>
+            </p>
+            <h2 class="learningTitle">Currently learning:</h2>
+            <p class="learning">
+              Angular, AngularJS, Vue, Yarn
+            </p>
+            <img src="./assets/skills/leftCircle.png" alt="pink circle" class="skillCircle" aria-hidden="true">
+            <img src="./assets/skills/leftDotted.png" alt="circle comprised of dots" class="skillDots"
+              aria-hidden="true">
+            <img src="./assets/skills/leftTriangle.png" alt=" blue triangle" class="skillTri" aria-hidden="true">
           </div>
         </div>
       </section>
       <!-- /About -->
-
-      <!-- Skills -->
-      <section class="skills" id="skills">
-        <div class="skillsWrapper">
-          <h2 class="skillsTitle">Current Skills:</h2>
-          <p class="currentSkills">
-            <i class="fab fa-html5" aria-label="HTML5"></i>
-            <i class="fab fa-css3-alt" aria-label="CSS3"></i>
-            <i class="devicon-jquery-plain" aria-label="jQuery"></i>
-            <i class="fab fa-js-square" aria-label="Javascript"></i>
-            <i class="fab fa-git-square" aria-label="Git collaboration"></i>
-            <i class="devicon-vscode-plain" aria-label="VS Code"></i>
-            <i class="fas fa-code-branch" aria-label="Git branching and version control"></i>
-            <!-- </p>
-          <p class="currentSkills"> -->
-            <i class="fab fa-sass" aria-label="Sass"></i>
-            <i class="fab fa-react" aria-label="React"></i>
-            <i class="devicon-firebase-plain" aria-label="Firebase"></i>
-            <i class="fab fa-figma" aria-label="Figma"></i>
-            <i class="devicon-photoshop-plain" aria-label="Adobe Photoshop"></i>
-            <i class="devicon-premierepro-plain" aria-label="Premiere Pro"></i>
-          </p>
-          <h2 class="learningTitle">Learning Next:</h2>
-          <p class="learning">
-            Ruby on Rails, Kotlin, Liquid
-          </p>
-          <img src="./assets/skills/leftCircle.png" alt="pink circle" class="skillCircle" aria-hidden="true">
-          <img src="./assets/skills/leftDotted.png" alt="circle comprised of dots" class="skillDots" aria-hidden="true">
-          <img src="./assets/skills/leftTriangle.png" alt=" blue triangle" class="skillTri" aria-hidden="true">
-        </div>
-      </section>
-      <!-- /Skills -->
 
       <!-- Portfolio -->
       <section class="portfolio" id="portfolio">
@@ -183,8 +185,10 @@
             <div class="projectText right">
               <h3 class="projectTitle">Reactive Retail</h3>
               <p class="projectDesc">
-                Reactive Retail is a mock eCommerce site built entirely in React using the FakeStore API and Firebase integration.
-                In the app, users can filter through a variety of products via category, add items to their cart, and also convert product prices to different currencies.
+                Reactive Retail is a mock eCommerce site built entirely in React using the FakeStore API and Firebase
+                integration.
+                In the app, users can filter through a variety of products via category, add items to their cart, and
+                also convert product prices to different currencies.
               </p>
               <div class="projectLinks">
                 <a href="https://reactiveretail.netlify.app/" class="projectLink">Live Project</a>
@@ -194,7 +198,8 @@
             <div class="projectImage">
               <div class="graySquareRight" aria-hidden="true"></div>
               <img src="./assets/portfolio/reactiveRetailScreens.png" alt="" class="projectScreen">
-              <img src="./assets/portfolio/projectDots.png" alt="square made of gray dots" class="projectDots" aria-hidden="true">
+              <img src="./assets/portfolio/projectDots.png" alt="square made of gray dots" class="projectDots"
+                aria-hidden="true">
             </div>
           </div>
 
@@ -264,7 +269,7 @@
 
 
       <!-- Contact -->
-      <div class="contact" id="contact">
+      <section class="contact" id="contact">
         <div class="contactWrapper">
           <h2>Contact Me</h2>
           <p>Thank you very much for visiting my site!</p>
@@ -286,15 +291,14 @@
               </li>
             </ul>
           </div>
-          <div class="return">
-            <a href="#about" class="projectLink">Go back</a>
-          </div>
+
         </div>
         <img src="./assets/contact/leftCircle.png" alt="large pink circle" class="contactLeftCir" aria-hidden="true">
-        <img src="./assets/contact/projectSquiggles.png" alt="three parallel wavy blue lines" class="contactSquig" aria-hidden="true">
+        <img src="./assets/contact/projectSquiggles.png" alt="three parallel wavy blue lines" class="contactSquig"
+          aria-hidden="true">
         <img src="./assets/contact/rightCircle.png" alt="pink circle" class="contactRightCir" aria-hidden="true">
         <img src="./assets/contact/rightTriangle.png" alt="purple triangle" class="contactTri" aria-hidden="true">
-      </div>
+      </section>
       <!-- /Contact -->
 
     </main>

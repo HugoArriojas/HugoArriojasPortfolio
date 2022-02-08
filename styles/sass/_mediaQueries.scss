@@ -1,3 +1,29 @@
+@media (max-width: 1300px) {
+    // About section
+    .aboutContent {
+        flex-direction: column;
+    }
+
+    .aboutWrapper {
+        margin: 0 auto;
+    }
+
+    .aboutText {
+        width: 85%;
+    }
+
+
+    .aboutImage {
+        width: 70%;
+        max-width: 540px;
+    }
+
+    .aboutDots {
+        top: -20%;
+    }
+
+}
+
 @media (max-width: 768px) {
 
     // Side nav styling
@@ -13,7 +39,7 @@
     }
     
     .sideNav {
-        padding-top: 5%;
+        padding-top: 30%;
         width: 0;
     }
 
@@ -27,18 +53,8 @@
 
 
     // about section
-    .aboutContent {
-        flex-direction: column;
-    }
-
-    .aboutWrapper {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-
-    .aboutImage {
-        width: 70%;
+    .graySquare {
+        width: auto;
     }
 
     .intro, 
@@ -60,7 +76,7 @@
 
     // Portfolio Section
 
-    .portfolio {
+    section.portfolio {
         background-image: linear-gradient(1deg, #FFF 99%, $purple calc(99% + 2px));
     }
 
@@ -143,7 +159,7 @@
     }
     
     // Portfolio section
-    .portfolio {
+    section.portfolio {
         background-image: linear-gradient(2deg, #FFF 99%, $purple calc(99% + 2px));
     }
 

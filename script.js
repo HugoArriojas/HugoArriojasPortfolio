@@ -1,6 +1,5 @@
 
 //  Dropdown menu styling
-  // From W3Schools
 function openDropdown() {
     document.getElementById("menuLinks").classList.toggle("show");
   }
@@ -49,5 +48,33 @@ function closeMobileNav () {
 
   const skillItems = Array.from(document.getElementsByClassName('skillItem'));
 
+// Highlighting current section on scroll
+const sections = document.querySelectorAll("section");
+const navSections = document.querySelectorAll("nav .sideNavLinks li a")
+
+window.addEventListener("scroll", () => {
+  let current = ""
+  sections.forEach(section => {
+    // calculates the top of the sections from the top of the window
+    const sectionTop = section.offsetTop;
+    // Checks how much we've scrolled on the page
+    const sectionHeight = section.clientHeight;
+
+    if (scrollY >= (sectionTop - sectionHeight / 3.9)) {
+      current = section.getAttribute("id");
+    }
+  })
+
+  navSections.forEach (li => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  })
+  
+})
+
+
 // Easter Egg
 console.log("Hey thanks for being so thorough in your search! Hope you like what you see 😊")
+
